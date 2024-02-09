@@ -27,20 +27,35 @@ footer {
     width: 100%;
 }
 
-nav {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     background-color: lightgrey;
-    padding: 10px;
     border-radius: 10px;
-}
-nav a{
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-}
+  }
 
-nav a:hover {
-    font-weight: bold;
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
     background-color: #333;
     color: white;
-    border-radius: 5px;
-}
+    font-weight: bold;
+  }
+
+  .active {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+  }
