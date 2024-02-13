@@ -1,28 +1,32 @@
+import { Link } from 'react-router-dom';
+import '../css/NavBar.css';
+
 function NavBar() {
   return (
-    <nav className="navbar background">
-      <ul className="nav-list">
+    <nav className="navbar">
         <div className="logo">
           <img src="src/assets/GoLiveExpertsLogo.jpg" />
         </div>
-        <li>
-          <a href="#courses">Courses</a>
-        </li>
-        <li>
-          <a href="#tutorials">Tutorials</a>
-        </li>
-        <li>
-          <a href="#jobs">Jobs</a>
-        </li>
-        <li>
-          <a href="#student">Student</a>
-        </li>
-      </ul>
 
-      <div className="rightNav">
-        <input type="text" name="search" id="search" />
-        <button className="btn btn-sm">Search</button>
-      </div>
+      <div>
+        <ul className="nav-list">
+          <li>
+            <Link to="/">HOME</Link>
+          </li>
+          <li>
+            <a href="/services">SERVICES</a>
+          </li>
+          <li>
+            <Link to="/about-us">ABOUT US</Link>
+          </li>
+          <li>
+            <a href="#jointheteam">JOIN THE TEAM</a>
+          </li>
+          <li>
+            <a href="#contactus">CONTACT US</a>
+          </li>
+        </ul>
+        </div>
     </nav>
   );
 }

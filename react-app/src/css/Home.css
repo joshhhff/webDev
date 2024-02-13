@@ -1,0 +1,44 @@
+.mainBody {
+	padding: 0 20px 0 20px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.mainBody h1 {
+	font-size: 60px;
+}
+
+.mainBody h1, .mainBody h3 {
+	padding-left: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+.box-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 80%;
+	margin: auto;
+	height: 80%;
+}
+
+.section-blue {
+	height: fit-content;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	background-color: #00b7ec;
+}
+
+.section-green {
+	margin: 10px 0 10px;
+	height: fit-content;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	background-color: #7fbb42;
+}
