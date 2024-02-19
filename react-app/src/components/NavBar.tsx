@@ -1,33 +1,35 @@
-import { Link } from 'react-router-dom';
-import '../css/NavBar.css';
+import { NavLink } from 'react-router-dom';
+import '../css/component-css/NavBar.css';
 
 function NavBar() {
   return (
-    <nav className="navbar">
-        <div className="logo">
-          <img src="src/assets/GoLiveExpertsLogo.jpg" />
-        </div>
+    <div className="navbar-container">
+      <nav className="navbar">
+          <div className="logo">
+            <img src="../src/assets/GoLiveExpertsLogo.jpg" />
+          </div>
 
-      <div>
-        <ul className="nav-list">
-          <li>
-            <Link to="/">HOME</Link>
-          </li>
-          <li>
-            <a href="/services">SERVICES</a>
-          </li>
-          <li>
-            <Link to="/about-us">ABOUT US</Link>
-          </li>
-          <li>
-            <a href="#jointheteam">JOIN THE TEAM</a>
-          </li>
-          <li>
-            <a href="#contactus">CONTACT US</a>
-          </li>
-        </ul>
-        </div>
-    </nav>
+        <div>
+          <ul className="nav-list">
+            <li>
+              <NavLink to="/" activeClassName="active">HOME</NavLink>
+            </li>
+            <li>
+              <NavLink to="/services/implementations" activeClassName="active">SERVICES</NavLink>
+            </li>
+            <li>
+              <NavLink to="/aboutus" activeClassName="active">ABOUT US</NavLink>
+            </li>
+            <li>
+              <NavLink to="/jointheteam" activeClassName="active">JOIN THE TEAM</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contactus" activeClassName="active">CONTACT US</NavLink>
+            </li>
+          </ul>
+          </div>
+      </nav>
+    </div>
   );
 }
 

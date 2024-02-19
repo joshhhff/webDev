@@ -1,6 +1,11 @@
+.navbar-container {
+    background-color: #f0f0f0;
+    padding: 20px 20px 0 20px;
+}
+
 .navbar {
 	background-color: #00b7ec;
-    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .logo {
@@ -32,4 +37,12 @@
 
 .nav-list li a:hover {
     color: rgb(206, 204, 204);
+}
+
+.nav-list li a.active {
+    color: rgb(206, 204, 204);
+}
+
+.nav-list li a.active:hover {
+    color: white;
 }

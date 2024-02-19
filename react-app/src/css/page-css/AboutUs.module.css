@@ -1,0 +1,31 @@
+.background {
+	background-color: #f0f0f0;
+	padding: 20px;
+}
+
+.mainBody {
+	padding: 20px;
+	min-height: 100vh;
+	color: white;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.mainBody h1 {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+.sectionBlue {
+	display: flex;
+	justify-content: space-evenly;
+	height: fit-content;
+	padding: 20px;
+	align-items: center;
+	text-align: center;
+	background-color: #00b7ec;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,41 @@
+.subnavbar-container {
+    background-color: #f0f0f0;
+}
+
+.sub-navbar {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+    background-color: white;
+}
+
+.sub-navlist {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    background-color: #036e8b;
+    height: 50px;
+    padding: 0;
+}
+
+.sub-navlist li a{
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.sub-navlist li a:hover {
+    color: rgb(206, 204, 204);
+}
+
+.sub-navlist li a.active {
+    color: rgb(206, 204, 204);
+}
+
+.sub-navlist li a.active:hover {
+    color: white;
+}

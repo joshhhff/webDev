@@ -1,4 +1,4 @@
-import '../css/InfoCard.css';
+import '../css/component-css/InfoCard.css';
 
 interface InfoCardProps {
   title: string;

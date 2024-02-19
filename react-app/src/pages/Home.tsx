@@ -1,18 +1,24 @@
-import '../css/Home.css';
+import styles from '../css/page-css/Home.module.css';
 import InfoCard from '../components/InfoCard';
+import Button from '../components/Button';
 
 function Home() {
   return (
-    <div className="mainBody">
-        <section className="section-blue">
-            <img src="src/assets/NetSuiteImage.jpg" />
-            <div className="text-info">
+    <div className={styles.mainBody}>
+        <section className={styles.sectionBlue}>
+            <img src="src/assets/NetSuiteImage.png" />
+            <div className={styles.textInfo}>
                 <h1>WE ARE<br/>GOLIVE EXPERTS</h1>
-                <h3>test</h3>
+                <h3>HELPING YOU IMPLEMENT AND OPTIMISE NETSUITE TO YOUR ORGANISATIONAL NEEDS</h3>
+                <Button
+                    link="/about-us"
+                    text="ABOUT US" 
+                    isSubmit={false}
+                />
             </div>
         </section>
         
-        <section className="section-green">
+        <section className={styles.sectionGreen}>
             <InfoCard
                 title="NetSuite"
                 image="src/assets/NetSuiteLogo.jpg"

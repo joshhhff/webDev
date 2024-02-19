@@ -1,10 +1,11 @@
 .mainBody {
-	padding: 0 20px 0 20px;
+	padding: 20px 20px 0 20px;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	color: white;
-	font-family: 'Exo 2', sans-serif;
+	background-color: #f0f0f0;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 .mainBody h1 {
@@ -12,21 +13,11 @@
 }
 
 .mainBody h1, .mainBody h3 {
-	padding-left: 10px;
 	font-weight: bold;
 	color: white;
 }
 
-.box-main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	max-width: 80%;
-	margin: auto;
-	height: 80%;
-}
-
-.section-blue {
+.sectionBlue {
 	height: fit-content;
 	padding: 20px;
 	display: flex;
@@ -34,7 +25,7 @@
 	background-color: #00b7ec;
 }
 
-.section-green {
+.sectionGreen {
 	margin: 10px 0 10px;
 	height: fit-content;
 	padding: 20px;
