@@ -39,6 +39,22 @@
 	text-align: left;
 }
 
+.clickableImageContainer{
+	width: fit-content;
+	height: fit-content;
+	overflow: hidden;
+}
+
+.clickableImageContainer .clickableImage {
+	width: 626px;
+	height: 626px;
+	transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.clickableImageContainer .clickableImage:hover {
+	transform: scale(1.2);
+	filter: brightness(70%);
+}
 
 .img {
 	float: left;
