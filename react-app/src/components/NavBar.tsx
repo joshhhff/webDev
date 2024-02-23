@@ -15,7 +15,7 @@ function NavBar() {
               <NavLink to="/" activeClassName="active">HOME</NavLink>
             </li>
             <li>
-              <NavLink to="/services/implementations" activeClassName="active">SERVICES</NavLink>
+              <NavLink to="/services" activeClassName="active">SERVICES</NavLink>
             </li>
             <li>
               <NavLink to="/aboutus" activeClassName="active">ABOUT US</NavLink>
