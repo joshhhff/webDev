@@ -1,6 +1,10 @@
 {
   "homepage": "https://joshhhff.github.io/reactWebsite/",
   "name": "react-app",
+<<<<<<< HEAD
+=======
+  "homepage": "https://joshhhff.github.io/webDev",
+>>>>>>> 0fdf854fb1a8933e346d867fb49ffa0f6a001843
   "private": true,
   "version": "0.0.0",
   "type": "module",
