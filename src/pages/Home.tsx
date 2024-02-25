@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className={styles.mainBody}>
         <section className={styles.sectionBlue}>
-            <img src="../../public/NetSuiteImage.png" />
+            <img src="./NetSuiteImage.png" />
             <div className={styles.textInfo}>
                 <h1>WE ARE<br/>GOLIVE EXPERTS</h1>
                 <h3>HELPING YOU IMPLEMENT AND OPTIMISE NETSUITE TO YOUR ORGANISATIONAL NEEDS</h3>
