@@ -11,7 +11,7 @@ function Home() {
                 <h1>WE ARE<br/>GOLIVE EXPERTS</h1>
                 <h3>HELPING YOU IMPLEMENT AND OPTIMISE NETSUITE TO YOUR ORGANISATIONAL NEEDS</h3>
                 <Button
-                    link="webDev/aboutus"
+                    link="/#/aboutus"
                     text="ABOUT US" 
                     isSubmit={false}
                 />
