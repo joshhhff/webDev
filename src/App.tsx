@@ -1,4 +1,5 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { ScrollReveal } from 'reveal-on-scroll-react';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -24,7 +25,9 @@ function App() {
             <Route path="/contactus" element={<ContactUs />}></Route>
         </Routes>
         </Router>
+        <ScrollReveal.div animation="slide-in-bottom">
         <Footer />
+        </ScrollReveal.div>
     </>
   );
 }
