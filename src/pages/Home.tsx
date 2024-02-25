@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className={styles.mainBody}>
         <section className={styles.sectionBlue}>
-            <img src="src/assets/NetSuiteImage.png" />
+            <img src="../assets/NetSuiteImage.png" />
             <div className={styles.textInfo}>
                 <h1>WE ARE<br/>GOLIVE EXPERTS</h1>
                 <h3>HELPING YOU IMPLEMENT AND OPTIMISE NETSUITE TO YOUR ORGANISATIONAL NEEDS</h3>
@@ -21,12 +21,12 @@ function Home() {
         <section className={styles.sectionGreen}>
             <InfoCard
                 title="NetSuite"
-                image="src/assets/NetSuiteLogo.jpg"
+                image="../assets/NetSuiteLogo.jpg"
                 description="NetSuite is the world's #1 Cloud ERP System. Keep track of Invetory, Financials and more!"
             />
             <InfoCard
                 title="Celigo"
-                image="src/assets/CeligoLogo.jpg" 
+                image="../assets/CeligoLogo.jpg" 
                 description="Offers seamless integrations between various different applications in your organisation."
             />
 
