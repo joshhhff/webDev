@@ -1,9 +1,7 @@
-import { ScrollReveal } from 'reveal-on-scroll-react';
 import '../css/component-css/Footer.css';
 
 function Footer() {
     return (
-        <ScrollReveal.div animation="slide-in-bottom">
         <footer className="footer">
             <p>
                 CO456 Web Development - Joshua Ford: 100181709<br/>Built using React
@@ -14,7 +12,6 @@ function Footer() {
                 </a>
             </div>
         </footer>
-        </ScrollReveal.div>
     )
 }
 
