@@ -6,7 +6,7 @@ import { ScrollReveal } from 'reveal-on-scroll-react';
 function Home() {
   return (
     <div className={styles.mainBody}>
-        <ScrollReveal.div>
+        <ScrollReveal.div animation="slide-in-bottom">
         <section className={styles.sectionBlue}>
             <img src="./NetSuiteImage.png" />
             <div className={styles.textInfo}>
