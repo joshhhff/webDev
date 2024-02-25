@@ -1,10 +1,12 @@
 import styles from '../css/page-css/Home.module.css';
 import InfoCard from '../components/InfoCard';
 import Button from '../components/Button';
+import { ScrollReveal } from 'reveal-on-scroll-react';
 
 function Home() {
   return (
     <div className={styles.mainBody}>
+        <ScrollReveal.div>
         <section className={styles.sectionBlue}>
             <img src="./NetSuiteImage.png" />
             <div className={styles.textInfo}>
@@ -17,6 +19,7 @@ function Home() {
                 />
             </div>
         </section>
+        </ScrollReveal.div>
         
         <section className={styles.sectionGreen}>
             <InfoCard
