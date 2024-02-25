@@ -3,7 +3,7 @@ import '../css/component-css/Footer.css';
 
 function Footer() {
     return (
-        <ScrollReveal.div>
+        <ScrollReveal.div animation="slide-in-bottom">
         <footer className="footer">
             <p>
                 CO456 Web Development - Joshua Ford: 100181709<br/>Built using React
