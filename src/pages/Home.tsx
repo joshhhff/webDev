@@ -21,6 +21,7 @@ function Home() {
         </section>
         </ScrollReveal.div>
         
+        <ScrollReveal.div animation="slide-in-bottom">
         <section className={styles.sectionGreen}>
             <InfoCard
                 title="NetSuite"
@@ -34,6 +35,7 @@ function Home() {
             />
 
         </section>
+        </ScrollReveal.div>
     </div>
 );
 }
