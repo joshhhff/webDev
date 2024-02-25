@@ -16,7 +16,7 @@ function ServicesTrainingAndMentoring() {
           <h1>TRAINING & MENTORING</h1>
           <section className={styles.sectionBlue}>
             <div className={styles.img}>
-              <img src="../src/assets/Training.png" alt="" />
+              <img src="./Training.png" alt="" />
             </div>
             <div>
             <p>We appreciate that the implementation of NetSuite solutions and new approaches to CRM and ERP can generate the need for new training. Indeed a key success factor is making sure the team is well trained to take advantage of the NetSuite solution.

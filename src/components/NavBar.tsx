@@ -6,7 +6,7 @@ function NavBar() {
     <div className="navbar-container">
       <nav className="navbar">
           <div className="logo">
-            <img src="../src/assets/GoLiveExpertsLogo.jpg" />
+            <img src="./GoLiveExpertsLogo.jpg" />
           </div>
 
         <div>

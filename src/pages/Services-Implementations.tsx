@@ -16,7 +16,7 @@ function ServicesImplementations() {
                 <h1>IMPLEMENTATION</h1>
                 <section className={styles.sectionBlue}>
                     <div className={styles.img}>
-                    <img src="../src/assets/Implementation.png" />
+                    <img src="./Implementation.png" />
                     </div>
                     <div>
                         <p>At GoLive Experts, there are many different stages of Implementation. These could include:</p>

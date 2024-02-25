@@ -8,7 +8,7 @@ function Footer() {
             </p>
             <div className="image">
                 <a href="https://react.dev/">
-                    <img src="../src/assets/ReactLogo.png" alt="" />
+                    <img src="./ReactLogo.png" alt="" />
                 </a>
             </div>
         </footer>

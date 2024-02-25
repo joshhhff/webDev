@@ -21,12 +21,12 @@ function Home() {
         <section className={styles.sectionGreen}>
             <InfoCard
                 title="NetSuite"
-                image="../assets/NetSuiteLogo.jpg"
+                image="./NetSuiteLogo.jpg"
                 description="NetSuite is the world's #1 Cloud ERP System. Keep track of Invetory, Financials and more!"
             />
             <InfoCard
                 title="Celigo"
-                image="../assets/CeligoLogo.jpg" 
+                image="./CeligoLogo.jpg" 
                 description="Offers seamless integrations between various different applications in your organisation."
             />
 
