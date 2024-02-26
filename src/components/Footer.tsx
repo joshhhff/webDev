@@ -3,8 +3,8 @@ import '../css/component-css/Footer.css';
 
 function Footer() {
     return (
-        <ScrollReveal.div animation="slide-in-left">
         <footer className="footer">
+            <ScrollReveal.div animation="slide-in-left">
             <p>
                 CO456 Web Development - Joshua Ford: 100181709<br/>Built using React
             </p>
@@ -13,8 +13,8 @@ function Footer() {
                     <img src="./FooterImage.png" alt="" />
                 </a>
             </div>
+            </ScrollReveal.div>
         </footer>
-        </ScrollReveal.div>
     )
 }
 
