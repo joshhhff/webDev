@@ -1,10 +1,13 @@
 import styles from '../css/page-css/Home.module.css';
 import InfoCard from '../components/InfoCard';
 import Button from '../components/Button';
+import NavBar from '../components/NavBar';
 import { ScrollReveal } from 'reveal-on-scroll-react';
 
 function Home() {
   return (
+    <>
+    <NavBar />
     <div className={styles.mainBody}>
         <ScrollReveal.div>
         <section className={styles.sectionBlue}>
@@ -37,6 +40,7 @@ function Home() {
         </section>
         </ScrollReveal.div>
     </div>
+    </>
 );
 }
 
