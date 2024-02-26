@@ -1,4 +1,5 @@
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -10,6 +11,10 @@ import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer';
 
 function App() {
+
+  const location = useLocation();
+  console.log('current url location:', location);
+
   return (
     <>
         <Router>
