@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import '../css/component-css/NavBar.css';
 
 function NavBar() {
@@ -12,7 +13,7 @@ function NavBar() {
         <div>
           <ul className="nav-list">
             <li>
-              <NavLink to="/" activeClassName="active">HOME</NavLink>
+              <NavLink to="/" activeClassName="active"><motion.p whileHover={{scale: 1.1}}>HOME</motion.p></NavLink>
             </li>
             <li>
               <NavLink to="/services" activeClassName="active">SERVICES</NavLink>
