@@ -13,19 +13,19 @@ function NavBar() {
         <ScrollReveal.div animation='slide-in-right'>
           <ul className="nav-list">
             <li>
-              <NavLink to="/" className={isActive =>"active" + (!isActive ? " unselected" : "")}>HOME</NavLink>
+              <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>HOME</NavLink>
             </li>
             <li>
-              <NavLink to="/services" className={isActive =>"active" + (!isActive ? " unselected" : "")}>SERVICES</NavLink>
+              <NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>SERVICES</NavLink>
             </li>
             <li>
-              <NavLink to="/aboutus" className={isActive =>"active" + (!isActive ? " unselected" : "")}>ABOUT US</NavLink>
+              <NavLink to="/aboutus" className={({ isActive }) => isActive ? 'active' : ''}>ABOUT US</NavLink>
             </li>
             <li>
-              <NavLink to="/jointheteam" className={isActive =>"active" + (!isActive ? " unselected" : "")}>JOIN THE TEAM</NavLink>
+              <NavLink to="/jointheteam" className={({ isActive }) => isActive ? 'active' : ''}>JOIN THE TEAM</NavLink>
             </li>
             <li>
-              <NavLink to="/contactus" className={isActive =>"active" + (!isActive ? " unselected" : "")}>CONTACT US</NavLink>
+              <NavLink to="/contactus" className={({ isActive }) => isActive ? 'active' : ''}>CONTACT US</NavLink>
             </li>
           </ul>
           </ScrollReveal.div>
