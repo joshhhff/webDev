@@ -7,6 +7,7 @@ function JoinTheTeam() {
             <div className={styles.mainBody}>
             <h1>JOIN THE TEAM</h1>
             <section className={styles.sectionBlue}>
+                Test
             </section>
             </div>
         </div>
