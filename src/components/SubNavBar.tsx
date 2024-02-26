@@ -26,7 +26,7 @@ function SubNavBar({numOfTabs, tabTitles, links}: SubNavBarProps) {
           {titles.map(function(title, i){
             return (
               <li>
-              <NavLink to={tabLinks[i]} activeClassName="active">{title}</NavLink>
+              <NavLink to={tabLinks[i]} className="active">{title}</NavLink>
             </li>
             );
           })}
