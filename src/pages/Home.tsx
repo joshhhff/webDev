@@ -2,12 +2,13 @@ import styles from '../css/page-css/Home.module.css';
 import InfoCard from '../components/InfoCard';
 import Button from '../components/Button';
 import { ScrollReveal } from 'reveal-on-scroll-react';
+import { motion } from 'framer-motion';
 
 function Home() {
   return (
     <>
     <div className={styles.mainBody}>
-        <ScrollReveal.div>
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <section className={styles.sectionBlue}>
             <img src="./NetSuiteImage.png" />
             <div className={styles.textInfo}>
@@ -20,7 +21,7 @@ function Home() {
                 />
             </div>
         </section>
-        </ScrollReveal.div>
+        </motion.div>
         
         <ScrollReveal.div>
         <section className={styles.sectionGreen}>
