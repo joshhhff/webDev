@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router-dom';
+import { ScrollReveal } from 'reveal-on-scroll-react';
 import '../css/component-css/NavBar.css';
 
 function NavBar() {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-          <div className="logo">
+          <ScrollReveal.div animation='slide-in-left' className="logo">
             <img src="./GoLiveExpertsLogo.jpg" />
-          </div>
+          </ScrollReveal.div>
 
-        <div>
+        <ScrollReveal.div animation='slide-in-right'>
           <ul className="nav-list">
             <li>
               <NavLink to="/" activeClassName="active">HOME</NavLink>
@@ -27,7 +28,7 @@ function NavBar() {
               <NavLink to="/contactus" activeClassName="active">CONTACT US</NavLink>
             </li>
           </ul>
-          </div>
+          </ScrollReveal.div>
       </nav>
     </div>
   );
