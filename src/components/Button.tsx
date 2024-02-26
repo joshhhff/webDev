@@ -1,4 +1,5 @@
 import '../css/component-css/Button.css';
+import { motion } from 'framer-motion';
 
 interface ButtonProps {
     link: string;
@@ -20,7 +21,7 @@ function Button({link, text, isSubmit}: ButtonProps) {
     } else {
         return (
             <a href={link}>
-                <button>{text}</button>
+                <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>{text}</motion.button>
             </a>
         )
     }
