@@ -13,19 +13,19 @@ function NavBar() {
         <ScrollReveal.div animation='slide-in-right'>
           <ul className="nav-list">
             <li>
-              <NavLink to="/" activeClassName="active">HOME</NavLink>
+              <NavLink to="/" className="active">HOME</NavLink>
             </li>
             <li>
-              <NavLink to="/services" activeClassName="active">SERVICES</NavLink>
+              <NavLink to="/services" className="active">SERVICES</NavLink>
             </li>
             <li>
-              <NavLink to="/aboutus" activeClassName="active">ABOUT US</NavLink>
+              <NavLink to="/aboutus" className="active">ABOUT US</NavLink>
             </li>
             <li>
-              <NavLink to="/jointheteam" activeClassName="active">JOIN THE TEAM</NavLink>
+              <NavLink to="/jointheteam" className="active">JOIN THE TEAM</NavLink>
             </li>
             <li>
-              <NavLink to="/contactus" activeClassName="active">CONTACT US</NavLink>
+              <NavLink to="/contactus" className="active">CONTACT US</NavLink>
             </li>
           </ul>
           </ScrollReveal.div>
