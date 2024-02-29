@@ -1,16 +1,37 @@
 import { NavLink } from 'react-router-dom';
-import { ScrollReveal } from 'reveal-on-scroll-react';
+import { motion } from 'framer-motion';
 import '../css/component-css/NavBar.css';
 
-function NavBar() {
+interface NavBarProps {
+  animate: boolean,
+}
+
+function NavBar({animate}: NavBarProps) {
+
+  let motionPropsLogo;
+  let motionPropsLinks;
+  if (animate) {
+    motionPropsLogo = {
+      initial: { opacity: 0, translateX: -100 },
+      animate: { opacity: 1, translateX: 0 },
+      transition: { duration: 1} 
+    };
+
+    motionPropsLinks = {
+      initial: { opacity: 0, translateX: +100 },
+      animate: { opacity: 1, translateX: 0 },
+      transition: { duration: 1} 
+    };
+  }
+
   return (
     <div className="navbar-container">
       <nav className="navbar">
-          <ScrollReveal.div animation='slide-in-left' className="logo">
+          <motion.div className="logo" {...motionPropsLogo}>
             <img src="./GoLiveExpertsLogo.jpg" />
-          </ScrollReveal.div>
+          </motion.div>
 
-        <ScrollReveal.div animation='slide-in-right'>
+        <motion.div {...motionPropsLinks}>
           <ul className="nav-list">
             <li>
               <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>HOME</NavLink>
@@ -28,7 +49,7 @@ function NavBar() {
               <NavLink to="/contactus" className={({ isActive }) => isActive ? 'active' : ''}>CONTACT US</NavLink>
             </li>
           </ul>
-          </ScrollReveal.div>
+          </motion.div>
       </nav>
     </div>
   );

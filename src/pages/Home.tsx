@@ -1,30 +1,30 @@
-import styles from '../css/page-css/Home.module.css';
+import '../css/page-css/Pages.css';
 import InfoCard from '../components/InfoCard';
 import Button from '../components/Button';
-import { ScrollReveal } from 'reveal-on-scroll-react';
+import NavBar from '../components/NavBar';
 import { motion } from 'framer-motion';
 
 function Home() {
   return (
     <>
-    <div className={styles.mainBody}>
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-        <section className={styles.sectionBlue}>
+    <NavBar animate={true} />
+    <div className="mainBody">
+        <motion.section className="sectionBlue" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}}>
             <img src="./NetSuiteImage.png" />
-            <div className={styles.textInfo}>
-                <h1>WE ARE<br/>GOLIVE EXPERTS</h1>
-                <h3>HELPING YOU IMPLEMENT AND OPTIMISE NETSUITE TO YOUR ORGANISATIONAL NEEDS</h3>
+            <div className="textInfo">
+                <h1 className="homePageHeader">WE ARE<br/>GOLIVE EXPERTS</h1>
+                <h3 className="homePageHeader">HELPING YOU IMPLEMENT AND OPTIMISE NETSUITE TO YOUR ORGANISATIONAL NEEDS</h3>
                 <Button
                     link="/webDev/#/aboutus"
                     text="ABOUT US" 
                     isSubmit={false}
                 />
             </div>
-        </section>
-        </motion.div>
+        </motion.section>
+
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}}><hr /></motion.div>
         
-        <ScrollReveal.div>
-        <section className={styles.sectionGreen}>
+        <motion.section className="sectionBlue" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}}>
             <InfoCard
                 title="NetSuite"
                 image="./NetSuiteLogo.jpg"
@@ -36,8 +36,7 @@ function Home() {
                 description="Offers seamless integrations between various different applications in your organisation."
             />
 
-        </section>
-        </ScrollReveal.div>
+        </motion.section>
     </div>
     </>
 );

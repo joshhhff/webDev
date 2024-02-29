@@ -1,6 +1,6 @@
 import SubNavBar from '../components/SubNavBar';
 import BlueCard from '../components/BlueCard';
-import styles from '../css/page-css/Services.module.css';
+import '../css/page-css/Pages.css';
 
 function ServicesTrainingAndMentoring() {
   return (
@@ -10,12 +10,12 @@ function ServicesTrainingAndMentoring() {
         tabTitles='IMPLEMENTATION,TRAINING & MENTORING'
         links='/services/implementations,/services/trainingandmentoring'
       />
-      <div className={styles.background}>
-        <div className={styles.mainBody}>
+      <div className="background">
+        <div className="mainBody">
 
-          <h1>TRAINING & MENTORING</h1>
-          <section className={styles.sectionBlue}>
-            <div className={styles.img}>
+          <h1 className="pageHeader">TRAINING & MENTORING</h1>
+          <section className="sectionBlue">
+            <div className="img">
               <img src="./Training.png" alt="" />
             </div>
             <div>
@@ -41,7 +41,7 @@ function ServicesTrainingAndMentoring() {
             </section>
 
             <hr />
-            <div className={styles.cards}>
+            <div className="cards">
               <BlueCard 
                 title="TRAINING"
                 description="Our professionally trained consultants will take you through detailed walkthroughs of the different aspects of NetSuite"

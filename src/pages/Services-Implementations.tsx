@@ -1,6 +1,6 @@
 import SubNavBar from '../components/SubNavBar';
 import BlueCard from '../components/BlueCard';
-import styles from '../css/page-css/Services.module.css';   //local css
+import '../css/page-css/Pages.css';
 
 function ServicesImplementations() {
     return (
@@ -11,11 +11,11 @@ function ServicesImplementations() {
             links='/services/implementations,/services/trainingandmentoring'
         />
 
-        <div className={styles.background}>
-            <div className={styles.mainBody}>
-                <h1>IMPLEMENTATION</h1>
-                <section className={styles.sectionBlue}>
-                    <div className={styles.img}>
+        <div className="background">
+            <div className="mainBody">
+                <h1 className="pageHeader">IMPLEMENTATION</h1>
+                <section className="sectionBlue">
+                    <div className="img">
                     <img src="./Implementation.png" />
                     </div>
                     <div>
@@ -31,7 +31,7 @@ function ServicesImplementations() {
 
                 <hr />
                 
-                <div className={styles.cards}>
+                <div className="cards">
                     <BlueCard 
                         title="INSTALLATION"
                         description="In general, so software installation is needed, as NetSuite is a cloud based service"
@@ -51,7 +51,7 @@ function ServicesImplementations() {
                         link=""
                     />
                 </div>
-                <div className={styles.cards}>
+                <div className="cards">
                     <BlueCard 
                         title="TRAINING"
                         description="Training your team on best practices, how to use systems and how to manage your tasks in NetSuite"

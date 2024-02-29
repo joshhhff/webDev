@@ -1,10 +1,11 @@
-import { ScrollReveal } from 'reveal-on-scroll-react';
+import { motion } from 'framer-motion';
 import '../css/component-css/Footer.css';
 
 function Footer() {
+
     return (
         <footer className="footer">
-            <ScrollReveal.div animation="slide-in-left">
+            <motion.div initial={{ opacity: 0, translateX: -100 }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ duration: 1}} viewport={{ once: true}}>
             <p>
                 CO456 Web Development - Joshua Ford: 100181709<br/>Built using React
             </p>
@@ -13,7 +14,7 @@ function Footer() {
                     <img src="./FooterImage.png" alt="" />
                 </a>
             </div>
-            </ScrollReveal.div>
+            </motion.div>
         </footer>
     )
 }

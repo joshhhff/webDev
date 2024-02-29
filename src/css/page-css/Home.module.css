@@ -23,13 +23,5 @@
 	display: flex;
 	align-items: center;
 	background-color: #00b7ec;
-}
-
-.sectionGreen {
-	margin: 10px 0 10px;
-	height: fit-content;
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	background-color: #7fbb42;
+	margin-bottom: 20px; 
 }

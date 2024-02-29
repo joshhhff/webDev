@@ -1,9 +1,11 @@
+import NavBar from '../components/NavBar';
 import SubNavBar from '../components/SubNavBar';
 import styles from '../css/page-css/AboutUs.module.css';
 
 function AboutUs() {
   return (
     <>
+      <NavBar animate={false} />
       <SubNavBar 
         numOfTabs={1}
         tabTitles='OUR COMPANY'
