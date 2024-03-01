@@ -25,8 +25,8 @@ function NavBar({animate}: NavBarProps) {
   }
 
   return (
-    <motion.div className="navbar-container" initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1}}>
-      <nav className="navbar">
+    <div className="navbar-container">
+      <motion.nav className="navbar" initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1}}>
           <motion.div className="logo" {...motionPropsLogo}>
             <img src="./GoLiveExpertsLogo.jpg" />
           </motion.div>
@@ -50,8 +50,8 @@ function NavBar({animate}: NavBarProps) {
             </li>
           </ul>
           </motion.div>
-      </nav>
-    </motion.div>
+      </motion.nav>
+    </div>
   );
 }
 
