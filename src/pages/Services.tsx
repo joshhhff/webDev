@@ -11,7 +11,7 @@ function Services() {
         <div className={styles.mainBody}>
         <h1 className="pageHeader">SERVICES</h1>
         <motion.section className="sectionBlue" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}}>
-            <motion.div className="clickableImageContainer" whileHover={{borderRadius: "3%"}} whileTap={{scale: 0.9}}>
+            <motion.div className="clickableImageContainer" whileHover={{scale: [1, 2, 2, 1, 1], rotate: [0, 0, 270, 270, 0], borderRadius: ["20%", "20%", "50%", "50%", "20%"]}} whileTap={{scale: 0.9}}>
                 <a href="/webDev/#/services/implementations"><img className="clickableImage" src="./Implementations Image.png" alt="" /></a>       
             </motion.div>
             <motion.div className="clickableImageContainer" whileHover={{borderRadius: "3%"}} whileTap={{scale: 0.9}}>
