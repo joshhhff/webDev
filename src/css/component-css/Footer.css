@@ -11,7 +11,12 @@
     margin: 0;
 }
 
-.image img {
-	width: 100px;
-	align-self: auto;
+.spinning-image-container {
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+}
+
+.footer img.spinning-image {
+	width: 50px;
 }

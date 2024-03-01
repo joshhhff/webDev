@@ -3,17 +3,30 @@ import '../css/component-css/Footer.css';
 
 function Footer() {
 
+    const location = window.location.href;
+
+    let motionProps
+    if (location.endsWith('/')) {
+        console.log('on home page');
+
+        motionProps = {
+            initial: {opacity: 0, translateX: -100},
+            whileInView: {opacity: 1, translateX: 0},
+            transition: {duration: 1},
+            viewport: {once: true},
+        }
+    }
+
     return (
         <footer className="footer">
-            <motion.div initial={{ opacity: 0, translateX: -100 }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ duration: 1}} viewport={{ once: true}}>
+            <motion.div {...motionProps}>
             <p>
                 CO456 Web Development - Joshua Ford: 100181709<br/>Built using React
             </p>
-            <div className="image">
-                <a href="https://react.dev/">
-                    <img src="./FooterImage.png" alt="" />
-                </a>
-            </div>
+
+            <motion.div className="spinning-image-container" animate={{ rotate: 360}} transition={{ duration: 4, repeat: Infinity, ease: 'linear' }} viewport={{ once: true }}>
+                <img className="spinning-image" src="./React-icon.png" alt="" />
+            </motion.div>
             </motion.div>
         </footer>
     )

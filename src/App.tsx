@@ -6,7 +6,6 @@ import ServicesImplementations from './pages/Services-Implementations';
 import AboutUs from './pages/AboutUs';
 import JoinTheTeam from './pages/JoinTheTeam';
 import ContactUs from './pages/ContactUs';
-import Footer from './components/Footer';
 
 function App() {
 
@@ -24,7 +23,6 @@ function App() {
             <Route path="/contactus" element={<ContactUs />}></Route>
         </Routes>
         </Router>
-        <Footer />
     </>
   );
 }

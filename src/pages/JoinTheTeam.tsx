@@ -1,19 +1,22 @@
 import NavBar from '../components/NavBar';
-import styles from '../css/page-css/JoinTheTeam.module.css';
+import Footer from '../components/Footer';
+import '../css/page-css/Pages.css'
+import styles from '../css/page-css/Pages.module.css';
 
 function JoinTheTeam() {
 
     return (
         <>
-        <NavBar animate={false} />
-        <div className={styles.background}>
+        <NavBar />
+        <div className="background">
             <div className={styles.mainBody}>
-            <h1>JOIN THE TEAM</h1>
-            <section className={styles.sectionBlue}>
+            <h1 className={styles.pageHeader}>JOIN THE TEAM</h1>
+            <section className="sectionBlue">
                 Test
             </section>
             </div>
         </div>
+        <Footer />
         </>
     )
 }

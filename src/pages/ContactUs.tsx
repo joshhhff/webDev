@@ -1,18 +1,20 @@
 import NavBar from '../components/NavBar';
-import styles from '../css/page-css/ContactUs.module.css';
+import Footer from '../components/Footer';
+import styles from '../css/page-css/Pages.module.css';
 
 function ContactUs() {
 
     return (
         <>
-        <NavBar animate={false} />
-        <div className={styles.background}>
+        <NavBar />
+        <div className="background">
             <div className={styles.mainBody}>
-            <h1>CONTACT US</h1>
-            <section className={styles.sectionBlue}>
+            <h1 className={styles.pageHeader}>CONTACT US</h1>
+            <section className="sectionBlue">
             </section>
             </div>
         </div>
+        <Footer />
         </>
     )
 }

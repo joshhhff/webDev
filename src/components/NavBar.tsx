@@ -2,27 +2,30 @@ import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../css/component-css/NavBar.css';
 
-interface NavBarProps {
-  animate: boolean,
-}
 
-function NavBar({animate}: NavBarProps) {
+function NavBar() {
 
-  let motionPropsLogo;
-  let motionPropsLinks;
-  if (animate) {
-    motionPropsLogo = {
-      initial: { opacity: 0, translateX: -100 },
-      animate: { opacity: 1, translateX: 0 },
-      transition: { duration: 1} 
-    };
+  	const location = window.location.href;
+  
+  	let motionPropsLogo;
+  	let motionPropsLinks;
 
-    motionPropsLinks = {
-      initial: { opacity: 0, translateX: +100 },
-      animate: { opacity: 1, translateX: 0 },
-      transition: { duration: 1} 
-    };
-  }
+    if (location.endsWith('/')) {
+        console.log('on home page');
+		motionPropsLogo = {
+			initial: { opacity: 0, translateX: -100 },
+			animate: { opacity: 1, translateX: 0 },
+			transition: { duration: 1} 
+		  };
+	  
+		  motionPropsLinks = {
+			initial: { opacity: 0, translateX: +100 },
+			animate: { opacity: 1, translateX: 0 },
+			transition: { duration: 1} 
+		  };
+    } else {
+        console.log('not services page')
+    }
 
   return (
     <div className="navbar-container">
