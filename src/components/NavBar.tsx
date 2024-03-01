@@ -51,7 +51,7 @@ function NavBar({animate}: NavBarProps) {
           </ul>
           </motion.div>
       </nav>
-    </div>
+    </motion.div>
   );
 }
 
