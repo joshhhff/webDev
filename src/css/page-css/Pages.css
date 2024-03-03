@@ -29,6 +29,13 @@
 	font-weight: bold;
 }
 
+.mainBody h1.pageHeader {
+	font-size: 30pt;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
 .sectionBlue {
 	height: fit-content;
 	padding: 20px;
@@ -95,12 +102,13 @@
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: black; /* Set your desired text color */
+	color: #00b7ec; /* Set your desired text color */
 	font-size: 30pt; /* Set your desired font size */
 	font-weight: bold;
 	text-align: top;
 	opacity: 0;
 	transition: opacity 0.3s ease;
+	text-align: center;
 }
 
 .clickableImageContainer:hover .hoverText{

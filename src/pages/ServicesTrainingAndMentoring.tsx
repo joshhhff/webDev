@@ -1,3 +1,5 @@
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import SubNavBar from '../components/SubNavBar';
 import BlueCard from '../components/BlueCard';
 import '../css/page-css/Pages.css';
@@ -5,6 +7,7 @@ import '../css/page-css/Pages.css';
 function ServicesTrainingAndMentoring() {
   return (
     <>
+    <NavBar />
       <SubNavBar 
         numOfTabs={2}
         tabTitles='IMPLEMENTATION,TRAINING & MENTORING'
@@ -13,7 +16,7 @@ function ServicesTrainingAndMentoring() {
       <div className="background">
         <div className="mainBody">
 
-          <h1 className="pageHeader">TRAINING & MENTORING</h1>
+          <h1 className="pageHeader">TRAINING</h1>
           <section className="sectionBlue">
             <div className="img">
               <img src="./Training.png" alt="" />
@@ -69,6 +72,7 @@ function ServicesTrainingAndMentoring() {
             </div>
         </div>
     </div>
+    <Footer />
     </>
     );
 }

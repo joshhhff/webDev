@@ -1,3 +1,5 @@
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import SubNavBar from '../components/SubNavBar';
 import BlueCard from '../components/BlueCard';
 import '../css/page-css/Pages.css';
@@ -5,6 +7,7 @@ import '../css/page-css/Pages.css';
 function ServicesImplementations() {
     return (
         <>
+        <NavBar />
         <SubNavBar 
             numOfTabs={2}
             tabTitles='IMPLEMENTATION,TRAINING & MENTORING'
@@ -73,6 +76,7 @@ function ServicesImplementations() {
                 </div>
             </div>
         </div>
+        <Footer />
         </>
     );
 }

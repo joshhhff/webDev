@@ -26,16 +26,20 @@ function Home() {
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}} viewport={{ once: true }}><hr /></motion.div>
         
         <motion.section className="sectionBlue" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}} viewport={{ once: true }}>
-            <InfoCard
-                title="NetSuite"
-                image="./NetSuiteLogo.jpg"
-                description="NetSuite is the world's #1 Cloud ERP System. Keep track of Invetory, Financials and more!"
-            />
-            <InfoCard
-                title="Celigo"
-                image="./CeligoLogo.jpg" 
-                description="Offers seamless integrations between various different applications in your organisation."
-            />
+            <motion.div initial={{ opacity: 0, translateX: -100}} whileInView={{ opacity: 1, translateX: 0}} transition={{ duration: 1}} viewport={{ once: true }}>
+                <InfoCard
+                    title="NetSuite"
+                    image="./NetSuiteLogo.jpg"
+                    description="NetSuite is the world's #1 Cloud ERP System. Keep track of Invetory, Financials and more!"
+                />
+            </motion.div>
+            <motion.div initial={{ opacity: 0, translateX: +100}} whileInView={{ opacity: 1, translateX: 0}} transition={{ duration: 1}} viewport={{ once: true }}>
+                <InfoCard
+                    title="Celigo"
+                    image="./CeligoLogo.jpg" 
+                    description="Offers seamless integrations between various different applications in your organisation."
+                />
+            </motion.div>
 
         </motion.section>
     </div>

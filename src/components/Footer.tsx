@@ -24,7 +24,7 @@ function Footer() {
                 CO456 Web Development - Joshua Ford: 100181709<br/>Built using React
             </p>
 
-            <motion.div className="spinning-image-container" animate={{ rotate: 360}} transition={{ duration: 4, repeat: Infinity, ease: 'linear' }} viewport={{ once: true }}>
+            <motion.div className="spinning-image-container" animate={{ rotate: 360}} transition={{ duration: 6, repeat: Infinity, ease: 'linear' }} viewport={{ once: true }}>
                 <img className="spinning-image" src="./React-icon.png" alt="" />
             </motion.div>
             </motion.div>

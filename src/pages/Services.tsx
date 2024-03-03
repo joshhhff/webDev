@@ -13,12 +13,13 @@ function Services() {
             <motion.div className={styles.mainBody} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}}>
                 <h1 className={styles.pageHeader}>SERVICES</h1>
                 <motion.section className="sectionBlue" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}}>
-                    <motion.div className="clickableImageContainer" whileHover={{borderRadius: "20%"}} whileTap={{scale: 0.9}}>
+                    <motion.div className="clickableImageContainer" whileHover={{borderRadius: "10%", scale: 0.9 }} whileTap={{scale: 0.9}}>
                         <a href="/webDev/#/services/implementations"><img className="clickableImage" src="./Implementations Image.png" alt="" /></a>
                         <div className="hoverText">IMPLEMENTATIONS</div>
                     </motion.div>
-                    <motion.div className="clickableImageContainer" whileHover={{borderRadius: "20%"}} whileTap={{scale: 0.9}}>
+                    <motion.div className="clickableImageContainer" whileHover={{borderRadius: "10%", scale: 0.9 }} whileTap={{scale: 0.9}}>
                         <a href="/webDev/#/services/trainingandmentoring"><img className="clickableImage" src="./Training & Mentoring.png" alt="" /></a>  
+                        <div className="hoverText">TRAINING</div>
                     </motion.div>
                 </motion.section>
             </motion.div>
