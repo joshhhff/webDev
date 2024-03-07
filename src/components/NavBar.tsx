@@ -1,11 +1,10 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'; 
 import { motion } from 'framer-motion';
 import '../css/component-css/NavBar.css';
+  
+function NavBar() { 
 
-
-function NavBar() {
-
-  	const location = window.location.href;
+	const location = window.location.href;
   
   	let motionPropsLogo;
   	let motionPropsLinks;
@@ -24,38 +23,35 @@ function NavBar() {
 			transition: { duration: 1} 
 		  };
     } else {
-        console.log('not services page')
+        console.log('not home page')
     }
-
-  return (
-    <div className="navbar-container">
-      <motion.nav className="navbar" initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 1}}>
-          <motion.div className="logo" {...motionPropsLogo}>
-            <img src="./GoLiveExpertsLogo.jpg" />
-          </motion.div>
-
-        <motion.div {...motionPropsLinks}>
-          <ul className="nav-list">
-            <li>
-              <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>HOME</NavLink>
-            </li>
-            <li>
-              <NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>SERVICES</NavLink>
-            </li>
-            <li>
-              <NavLink to="/aboutus" className={({ isActive }) => isActive ? 'active' : ''}>ABOUT US</NavLink>
-            </li>
-            <li>
-              <NavLink to="/jointheteam" className={({ isActive }) => isActive ? 'active' : ''}>JOIN THE TEAM</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contactus" className={({ isActive }) => isActive ? 'active' : ''}>CONTACT US</NavLink>
-            </li>
-          </ul>
-          </motion.div>
-      </motion.nav>
-    </div>
-  );
-}
-
+	
+    return (
+		<div className="navbar"> 
+			<motion.div className="cv-download" {...motionPropsLogo}>
+				<button><p>MY CV</p></button>
+			</motion.div>
+			<input type="checkbox" id="nav_check" hidden />
+			<nav>
+				<ul>
+					<li>
+						<NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
+					</li>
+					<li>
+						<NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>Experience</NavLink>
+					</li>
+					<li>
+						<NavLink to="/aboutus" className={({ isActive }) => isActive ? 'active' : ''}>Contact Me</NavLink>
+					</li>
+				</ul>
+			</nav>
+			<label htmlFor="nav_check" className="hamburger">
+				<div></div>
+				<div></div>
+				<div></div>
+			</label>
+		</div>
+    ); 
+} 
+  
 export default NavBar;

@@ -1,20 +1,16 @@
-.background {
-	background-color: #f0f0f0;
-	padding: 20px;
-}
-
 .mainBody {
 	padding: 20px 20px 0 20px;
 	min-height: 100vh;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	color: white;
-	background-color: #f0f0f0;
+	background-color: #0F0F25;
 	font-family: 'Fira Sans', sans-serif;
 }
 
 .mainBody h1 {
-	font-size: 60px;
+	font-size: 3.125vw;
 }
 
 .mainBody h1.homePageHeader, .mainBody h3.homePageHeader {
@@ -36,24 +32,32 @@
 	font-weight: bold;
 }
 
-.sectionBlue {
+.section {
 	height: fit-content;
 	padding: 20px;
 	display: flex;
+	flex-direction: row;
+	text-align: left;
 	align-items: center;
-	background-color: #00b7ec;
+	vertical-align: center;
 	margin-bottom: 20px; 
 }
 
-.sectionBlue {
-	justify-content: space-evenly;
-	text-align: left;
+.section .home-page-image {
+	width: 32.604vw;
+	height: 24.479vw;
+}
+
+.section .programming-languages {
+	display: flex;
+    justify-content: space-evenly;
 }
 
 .mainBody hr {
-	border: 5px solid #7fbb42;
+	border: 2px solid #1F1F25;
 	opacity: 100%;
 	margin: 0 0 20px;
+	width: 90vw;
 }
 
 .sectionBlue li {

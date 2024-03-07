@@ -21,7 +21,7 @@ function Button({link, text, isSubmit}: ButtonProps) {
     } else {
         return (
             <a href={link}>
-                <motion.button whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>{text}</motion.button>
+                <motion.button className="button" whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>{text}</motion.button>
             </a>
         )
     }

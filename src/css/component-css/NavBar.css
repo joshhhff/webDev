@@ -1,48 +1,105 @@
-.navbar-container {
-    background-color: #f0f0f0;
-    padding: 20px 20px 0 20px;
-}
-
 .navbar {
-	background-color: #00b7ec;
-    font-family: 'Fira Sans', sans-serif;
-}
-
-.logo {
-    width: fit-content;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    margin: 0 0 0 25px;
-}
-
-.logo img {
-	width: 180px;
-}
-
-.nav-list {
-    list-style-type: none;
+    background: #1F1F25;
+    width: 100%;
+    height: 70px;
     display: flex;
     align-items: center;
-    vertical-align: middle;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.navbar .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.navbar .cv-download {
+    margin-left: 20px;
+}
+
+.navbar .cv-download button {
+    width: 5vw;
+    height: 5vh;
+    background-color: #1F1F25;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar .cv-download button:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar .cv-download button p {
     margin: 0;
+    font-size: 1vw;
 }
 
-.nav-list li a{
-    margin: 0 25px;
+.navbar nav {
+    background-color: #1F1F25;
+}
+.navbar nav ul {
+    vertical-align: middle;
+    margin: 0 20px;
+    display: flex;
+    list-style-type: none;
+}
+.navbar nav ul li a {
+    display: inline-block;
+    color: #414141;
+    padding: 5px 0;
+    margin: 0 30px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
     text-decoration: none;
+    transition: 0.2s;
+}
+
+.navbar nav ul li a.active {
+    color: white
+}
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
     color: white;
-    font-weight: 500;
+    border-bottom-color: white;
 }
-
-.nav-list li a:hover {
-    color: rgb(206, 204, 204);
+.hamburger {
+    cursor: pointer;
+    display: none;
 }
-
-.nav-list li a.active {
-    color: rgb(206, 204, 204);
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 20px;
+    background: white;
 }
-
-.nav-list li a.active:hover {
-    color: white;
+@media only screen and (max-width: 900px) {
+    .navbar {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    .navbar nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #1F1F25;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    .navbar #nav_check:checked ~ nav {
+        left: 0;
+    }
+    .navbar nav ul {
+        display: block;
+    }
+    .navbar nav ul li a {
+        margin: 5px 0;
+    }
 }
