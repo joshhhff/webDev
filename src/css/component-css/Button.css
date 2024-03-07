@@ -1,12 +1,13 @@
 .button {
     border: 1px solid white;
     background-color: #0F0F25;
-    width: 200px;
+    width: 10.417vw;
     border-radius: 10px;
     color: white;
-    height: 50px;
+    height: 2.604vw;
     font-weight: bold;
     transition: 0.3s;
+    font-size: 0.833vw;
 }
 
 .button:hover {

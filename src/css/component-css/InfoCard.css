@@ -1,16 +1,23 @@
 .card {
     width: fit-content;
+    border: 0;
+    --bs-card-bg: none !important;
 }
 
 .card img {
-    width: 200px;
-    height: 200px;
+    width: 10.417vw;
+    height: 10.417vw;
 }
 
 .card-body {
+    margin-top: 10px;
     background-color: #1F1F25;
+    height: fit-content;
 }
 
 .card-title {
     color: white !important;
+    text-align: center;
+    margin: 0 !important;
+    font-size: 1.042vw;
 }

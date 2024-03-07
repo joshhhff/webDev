@@ -19,6 +19,7 @@
 .navbar .cv-download button {
     width: 5vw;
     height: 5vh;
+    border-radius: 10px;
     background-color: #1F1F25;
     border: 1px solid white;
     color: white;

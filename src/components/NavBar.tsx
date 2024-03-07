@@ -32,7 +32,7 @@ function NavBar() {
 				<button><p>MY CV</p></button>
 			</motion.div>
 			<input type="checkbox" id="nav_check" hidden />
-			<nav>
+			<motion.nav {...motionPropsLinks}>
 				<ul>
 					<li>
 						<NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
@@ -44,7 +44,7 @@ function NavBar() {
 						<NavLink to="/aboutus" className={({ isActive }) => isActive ? 'active' : ''}>Contact Me</NavLink>
 					</li>
 				</ul>
-			</nav>
+			</motion.nav>
 			<label htmlFor="nav_check" className="hamburger">
 				<div></div>
 				<div></div>

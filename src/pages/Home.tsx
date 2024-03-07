@@ -11,7 +11,7 @@ function Home() {
     <NavBar />
     <div className="mainBody">
         <motion.section className="section" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}} viewport={{ once: true }}>
-            <motion.div className="textInfo" initial={{ opacity: 0, translateX: -500 }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ duration: 1}} viewport={{ once: true }}>
+            <motion.div className="textInfo" initial={{ opacity: 0, translateX: -100 }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ duration: 1}} viewport={{ once: true }}>
                 <h1 className="homePageHeader">Hi, I'm Josh!</h1>
                 <h3 className="homePageHeader">First year Computer Science student - Software Developer</h3>
                 <Button
@@ -20,7 +20,7 @@ function Home() {
                     isSubmit={false}
                 />
             </motion.div>
-            <motion.img className="home-page-image" src='./HomePageImage.png' initial={{ opacity: 0, translateX: +500 }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ duration: 1}} viewport={{ once: true }} />
+            <motion.img className="home-page-image" src='./HomePageImage.png' initial={{ opacity: 0, translateX: +100 }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ duration: 1}} viewport={{ once: true }} />
         </motion.section>
 
         <motion.hr initial={{ opacity: 0, translateX: -500 }} whileInView={{ opacity: 1, translateX: 0}} transition={{ duration: 1}} viewport={{ once: true }}/>
@@ -30,17 +30,14 @@ function Home() {
                 <InfoCard
                     title='JavaScript'
                     image='./JavaScript-logo.png'
-                    description=''
                 />
                 <InfoCard
                     title='TypeScript'
                     image='./TypeScript-logo.png'
-                    description=''
                 />
                 <InfoCard
                     title='JavaScript'
                     image='./JavaScript-logo.png'
-                    description=''
                 />
             </motion.div>
         </motion.section>

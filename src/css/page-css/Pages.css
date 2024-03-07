@@ -13,6 +13,10 @@
 	font-size: 3.125vw;
 }
 
+.mainBody h3 {
+	font-size: 1.458vw;
+}
+
 .mainBody h1.homePageHeader, .mainBody h3.homePageHeader {
 	font-weight: bold;
 	color: white;
