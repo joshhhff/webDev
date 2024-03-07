@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'; 
+import { GoDownload, GoMail } from 'react-icons/go';
 import { motion } from 'framer-motion';
 import '../css/component-css/NavBar.css';
   
@@ -29,7 +30,8 @@ function NavBar() {
     return (
 		<div className="navbar"> 
 			<motion.div className="cv-download" {...motionPropsLogo}>
-				<button><p>MY CV</p></button>
+				<a href="./CV.pdf"><GoDownload className="download-button"/></a>
+				<a href="mailto: joshfordd2004@gmail.com"><GoMail className="download-button" /></a>
 			</motion.div>
 			<input type="checkbox" id="nav_check" hidden />
 			<motion.nav {...motionPropsLinks}>
@@ -38,10 +40,10 @@ function NavBar() {
 						<NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>Home</NavLink>
 					</li>
 					<li>
-						<NavLink to="/services" className={({ isActive }) => isActive ? 'active' : ''}>Experience</NavLink>
+						<NavLink to="/experience" className={({ isActive }) => isActive ? 'active' : ''}>Experience</NavLink>
 					</li>
 					<li>
-						<NavLink to="/aboutus" className={({ isActive }) => isActive ? 'active' : ''}>Contact Me</NavLink>
+						<NavLink to="/contactme" className={({ isActive }) => isActive ? 'active' : ''}>Contact Me</NavLink>
 					</li>
 				</ul>
 			</motion.nav>

@@ -10,11 +10,17 @@
 }
 
 .mainBody h1 {
-	font-size: 3.125vw;
+	font-size: 4vw;
 }
 
 .mainBody h3 {
 	font-size: 1.458vw;
+	color: #bb55c3 !important;
+}
+
+.mainBody h4 {
+	font-size: 0.8vw;
+	color: lightgrey
 }
 
 .mainBody h1.homePageHeader, .mainBody h3.homePageHeader {
@@ -48,8 +54,7 @@
 }
 
 .section .home-page-image {
-	width: 32.604vw;
-	height: 24.479vw;
+	width: 50vw;
 }
 
 .section .programming-languages {

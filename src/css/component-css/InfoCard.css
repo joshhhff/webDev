@@ -1,6 +1,6 @@
 .card {
     width: fit-content;
-    border: 0;
+    border: 0 !important;
     --bs-card-bg: none !important;
 }
 
