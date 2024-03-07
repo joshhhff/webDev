@@ -20,6 +20,7 @@ function BlueCard({title, description, hasButton, link}: BlueCardProps) {
                         link={link}
                         text="LEARN MORE"
                         isSubmit={false}
+                        arrow={false}
                     />
                 </div>
             </div>
