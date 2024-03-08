@@ -21,7 +21,6 @@
     height: 4vh;
     border-radius: 10px;
     color: white;
-    transition: 0.3s;
     margin-right: 25px;
 }
 
@@ -30,7 +29,6 @@
     height: 4vh;
     border-radius: 10px;
     color: #414141;
-    transition: 0.3s;
 }
 
 .navbar .cv-download button:hover {
@@ -60,7 +58,6 @@
     border: 3px solid transparent;
     text-transform: uppercase;
     text-decoration: none;
-    transition: 0.2s;
 }
 
 .navbar nav ul li a.active {
@@ -90,21 +87,21 @@
         padding: 0 30px;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 680px) {
     .hamburger {
         display: block;
     }
     .navbar nav {
         position: absolute;
         width: 40%;
-        right: -100%;
         top: 70px;
+        right: 0;
+        visibility: hidden;
         background: #1F1F25;
         padding: 30px;
-        transition: 0.3s;
     }
     .navbar #nav_check:checked ~ nav {
-        right: 0;
+        visibility: visible;
     }
     .navbar nav ul {
         display: block;
