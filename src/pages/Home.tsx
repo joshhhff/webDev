@@ -13,7 +13,7 @@ function Home() {
             <motion.div className="textInfo" initial={{ opacity: 0, translateX: -100 }} whileInView={{ opacity: 1, translateX: 0 }} transition={{ duration: 1}} viewport={{ once: true }}>
                 <h1 className="homePageHeader">Hi, I'm Josh!</h1>
                 <h3 className="homePageHeader">First year Computer Science student - Software Developer</h3>
-                <h4>I have experience in several programming languages, mainly including JavaScript, C#, Java and more!</h4>
+                <h4>I have experience in several programming languages, mainly including JavaScript, Java & Python!</h4>
                 <Button
                     link="/webDev/#/aboutus"
                     text="About Me" 

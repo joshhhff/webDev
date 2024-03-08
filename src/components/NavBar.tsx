@@ -47,11 +47,11 @@ function NavBar() {
 					</li>
 				</ul>
 			</motion.nav>
-			<label htmlFor="nav_check" className="hamburger">
+			<motion.label htmlFor="nav_check" className="hamburger" {...motionPropsLinks}>
 				<div></div>
 				<div></div>
 				<div></div>
-			</label>
+			</motion.label>
 		</div>
     ); 
 } 

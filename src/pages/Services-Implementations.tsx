@@ -10,8 +10,8 @@ function ServicesImplementations() {
         <NavBar />
         <SubNavBar 
             numOfTabs={2}
-            tabTitles='IMPLEMENTATION,TRAINING & MENTORING'
-            links='/services/implementations,/services/trainingandmentoring'
+            tabTitles='EDUCATION,INDUSTRY'
+            links='/experience/education,/experience/industry'
         />
 
         <div className="background">

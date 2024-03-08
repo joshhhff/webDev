@@ -1,11 +1,11 @@
 .mainBody {
 	padding: 20px 20px 0 20px;
 	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
 	color: white;
 	background-color: #0F0F25;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	font-family: 'Fira Sans', sans-serif;
 }
 
@@ -37,9 +37,10 @@
 
 .mainBody h1.pageHeader {
 	font-size: 30pt;
-	color: black;
+	color: white;
 	text-align: center;
 	font-weight: bold;
+	border-bottom-color: white;
 }
 
 .section {
@@ -47,6 +48,7 @@
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-evenly;
 	text-align: left;
 	align-items: center;
 	vertical-align: center;
@@ -57,20 +59,11 @@
 	width: 50vw;
 }
 
-.section .programming-languages {
-	display: flex;
-    justify-content: space-evenly;
-}
-
 .mainBody hr {
 	border: 2px solid #1F1F25;
 	opacity: 100%;
 	margin: 0 0 20px;
 	width: 90vw;
-}
-
-.sectionBlue li {
-	text-align: left;
 }
 
 .clickableImageContainer{

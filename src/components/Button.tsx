@@ -16,17 +16,15 @@ function Button({link, text, isSubmit, arrow}: ButtonProps) {
         
     }
     
-    if (isSubmit) {
-        return (
-            <button onClick={onClick}>{text}</button>
-        )
-    } else {
-        return (
+    return (
+        isSubmit ? (<button onClick={onClick}>{text}</button>) : (
             <a href={link}>
-                <motion.button className="button" whileHover={{scale: 1.1}} whileTap={{scale: 0.9}}>{text} {arrow ? <GoArrowRight/> : ''}</motion.button>
+                <motion.button className="button" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                    {text} {arrow ? <GoArrowRight /> : ''}
+                </motion.button>
             </a>
         )
-    }
+    );
 }
     
-    export default Button;
+export default Button;

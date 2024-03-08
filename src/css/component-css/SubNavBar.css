@@ -1,12 +1,12 @@
 .subnavbar-container {
-    background-color: #f0f0f0;
+    background-color: #0F0F25;
 }
 
 .sub-navbar {
     display: flex;
     justify-content: center;
     margin: 0 20px 0 20px;
-    background-color: white;
+    background-color: #35353b;
 }
 
 .sub-navlist {
@@ -16,7 +16,7 @@
     vertical-align: middle;
     text-align: center;
     margin: 0;
-    background-color: #036e8b;
+    background-color: #2d2d31;
     height: 50px;
     padding: 0;
 }
@@ -24,18 +24,23 @@
 .sub-navlist li a{
     margin: 0 25px;
     text-decoration: none;
-    color: white;
+    color: #414141;
     font-weight: 500;
+    border: 3px solid transparent;
+    transition: 0.2s;
 }
 
 .sub-navlist li a:hover {
-    color: rgb(206, 204, 204);
+    color: white;
+    border-bottom-color: white;
 }
 
 .sub-navlist li a.active {
-    color: rgb(206, 204, 204);
+    color: white;
+    border-bottom-color: white;
 }
 
 .sub-navlist li a.active:hover {
-    color: white;
+    color: #414141;
+    border-bottom-color: #414141;
 }
