@@ -13,26 +13,21 @@
 	font-size: 5vw;
 }
 
-.mainBody h3 {
-	font-size: 1.6vw;
-	color: #bb55c3 !important;
-}
-
-.mainBody h4 {
-	font-size: 0.9vw;
-	color: lightgrey
-}
-
-.mainBody h1.homePageHeader, .mainBody h3.homePageHeader {
+.mainBody h1.homePageHeader {
 	font-weight: bold;
 	color: white;
     text-align: left;
 }
 
-.mainBody h1 {
-	color: black;
-	text-align: center;
+.mainBody h3.homePageHeader {
 	font-weight: bold;
+	color: #bb55c3;
+    text-align: left;
+}
+
+.mainBody h4.homePageHeader {
+	font-size: 0.9vw;
+	color: lightgrey
 }
 
 .mainBody h1.pageHeader {
@@ -41,6 +36,12 @@
 	text-align: center;
 	font-weight: bold;
 	border-bottom-color: white;
+}
+
+.mainBody .subPageHeader {
+	text-align: left !important;
+	color: white;
+	font-size: 2vw;
 }
 
 .section {
@@ -72,6 +73,22 @@
 	width: 90vw;
 }
 
+.education-block {
+	width: 90vw;
+	border: 2px solid transparent;
+	border-left-color: #1F1F25;
+	border-bottom-color: #1F1F25;
+	text-align: center;
+}
+
+.industry-block {
+	width: 90vw;
+	border: 2px solid transparent;
+	border-right-color: #1F1F25;
+	border-top-color: #1F1F25;
+	text-align: center;
+}
+
 .clickableImageContainer{
 	width: fit-content;
 	height: fit-content;
@@ -79,8 +96,9 @@
 }
 
 .clickableImageContainer .clickableImage {
-	width: 35vw;
-	height: 35vw;
+	width: 20vw;
+	height: 20vw;
+	border-radius: 10px;
 	transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
@@ -114,7 +132,6 @@
 	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: #00b7ec; /* Set your desired text color */
 	font-size: 30pt; /* Set your desired font size */
 	font-weight: bold;
 	text-align: top;

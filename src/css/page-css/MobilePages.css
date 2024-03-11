@@ -21,20 +21,25 @@
 		font-size: 10vw;
 	}
 	
-	.mainBody h3 {
-		font-size: 3.2vw;
-		color: #bb55c3 !important;
-	}
-	
-	.mainBody h4 {
-		font-size: 1.8vw;
-		color: lightgrey
-	}
-	
-	.mainBody h1.homePageHeader, .mainBody h3.homePageHeader {
+	.mainBody h1.homePageHeader {
 		font-weight: bold;
 		color: white;
 		text-align: left;
+	}
+	
+	.mainBody h3.homePageHeader {
+		font-weight: bold;
+		color: #bb55c3;
+		text-align: left;
+	}
+	
+	.mainBody h4.homePageHeader {
+		font-size: 3vw;
+		color: lightgrey
+	}
+
+	.mainBody .subPageHeader {
+		font-size: 5vw;
 	}
 	
 	.mainBody h1 {

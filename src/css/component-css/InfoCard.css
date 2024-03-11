@@ -22,9 +22,14 @@
     font-size: 1.042vw;
 }
 
+/*MOBILE VERSION*/
 @media (max-width: 680px) {
     .card img {
         width: 40vw;
         height: 40vw;
+    }
+
+    .card-title {
+        font-size: 3vw;
     }
 }

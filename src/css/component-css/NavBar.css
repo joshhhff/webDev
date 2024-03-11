@@ -95,8 +95,14 @@
         padding: 30px;
         z-index: 1;
     }
+    .hamburger div {
+        background-color: white;
+    }
     .navbar #nav_check:checked ~ nav {
         visibility: visible;
+    }
+    .navbar #nav_check:not(:checked) ~ .hamburger div {
+        background-color: white;
     }
     .navbar #nav_check:checked ~ .hamburger div {
         background-color: #414141;
