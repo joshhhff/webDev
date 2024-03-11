@@ -29,9 +29,9 @@ function NavBar() {
 	
     return (
 		<div className="navbar"> 
-			<motion.div className="cv-download" {...motionPropsLogo}>
-				<a href="./CV.pdf"><GoDownload className="download-button"/></a>
-				<a href="mailto: joshfordd2004@gmail.com"><GoMail className="download-button" /></a>
+			<motion.div className="nav-icons" {...motionPropsLogo}>
+				<div className="nav-icon-container"><a href="./CV.pdf"><GoDownload className="nav-icon"/></a></div>
+				<div className="nav-icon-container"><a href="mailto: joshfordd2004@gmail.com"><GoMail className="nav-icon" /></a></div>
 			</motion.div>
 			<input type="checkbox" id="nav_check" hidden />
 			<motion.nav {...motionPropsLinks}>

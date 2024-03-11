@@ -11,7 +11,7 @@
 }
 
 .footer p {
-	font-size: 1.042vw;
+	font-size: 16px;
 }
 
 .spinning-image-container {
@@ -21,5 +21,5 @@
 }
 
 .footer img.spinning-image {
-	width: 2.604vw;
+	width: 50px;
 }

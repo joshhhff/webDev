@@ -1,6 +1,4 @@
 import NavBar from '../components/NavBar';
-import InfoCard from '../components/InfoCard';
-import { motion } from 'framer-motion';
 import Footer from '../components/Footer';
 import '../css/page-css/Pages.css'
 
@@ -17,23 +15,6 @@ function AboutUs() {
           </section>
         </div>
       </div>
-
-      <motion.section className="section" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 1}} viewport={{ once: true }}>
-            <motion.div className="programming-languages" initial={{ opacity: 0, translateX: -100 }} whileInView={{ opacity: 1, translateX: 0}} transition={{ duration: 1}} viewport={{ once: true }}>
-                <InfoCard
-                    title='JavaScript'
-                    image='./JavaScript-logo.png'
-                />
-                <InfoCard
-                    title='TypeScript'
-                    image='./TypeScript-logo.png'
-                />
-                <InfoCard
-                    title='JavaScript'
-                    image='./JavaScript-logo.png'
-                />
-            </motion.div>
-        </motion.section>
       <Footer />
     </>
   )

@@ -12,33 +12,24 @@
     text-transform: uppercase;
 }
 
-.navbar .cv-download {
-    margin-left: 20px;
+.navbar .nav-icons {
+    margin-left: 30px;
+    display: flex;
 }
 
-.navbar .cv-download .download-button {
-    width: 2vw;
-    height: 4vh;
+.navbar .nav-icon-container {
+    margin-right: 30px;
+}
+
+.navbar .nav-icons .nav-icon {
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
     color: white;
-    margin-right: 25px;
 }
 
-.navbar .cv-download .download-button:hover {
-    width: 2vw;
-    height: 4vh;
-    border-radius: 10px;
+.navbar .nav-icons .nav-icon:hover {
     color: #414141;
-}
-
-.navbar .cv-download button:hover {
-    background-color: white;
-    color: black;
-}
-
-.navbar .cv-download button p {
-    margin: 0;
-    font-size: 1vw;
 }
 
 .navbar nav {
@@ -76,6 +67,9 @@
     cursor: pointer;
     display: none;
 }
+.hamburger:hover div {
+    background-color: #414141;
+}
 .hamburger div {
     width: 30px;
     height: 3px;
@@ -99,9 +93,13 @@
         visibility: hidden;
         background: #1F1F25;
         padding: 30px;
+        z-index: 1;
     }
     .navbar #nav_check:checked ~ nav {
         visibility: visible;
+    }
+    .navbar #nav_check:checked ~ .hamburger div {
+        background-color: #414141;
     }
     .navbar nav ul {
         display: block;

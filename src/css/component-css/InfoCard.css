@@ -21,3 +21,10 @@
     margin: 0 !important;
     font-size: 1.042vw;
 }
+
+@media (max-width: 680px) {
+    .card img {
+        width: 40vw;
+        height: 40vw;
+    }
+}
