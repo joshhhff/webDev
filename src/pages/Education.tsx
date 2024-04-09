@@ -1,7 +1,6 @@
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SubNavBar from '../components/SubNavBar';
-import BlueCard from '../components/BlueCard';
 import '../css/page-css/Pages.css';
 
 function Education() {
