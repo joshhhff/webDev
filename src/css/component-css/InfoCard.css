@@ -5,14 +5,18 @@
 }
 
 .card img {
-    width: 10.417vw;
-    height: 10.417vw;
+    width: 15vw;
+    height: 15vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .card-body {
-    margin-top: 10px;
+    margin: 30px 0 30px;
     background-color: #1F1F25;
     height: fit-content;
+    border-radius: 10px;
 }
 
 .card-title {
@@ -23,7 +27,7 @@
 }
 
 /*MOBILE VERSION*/
-@media (max-width: 680px) {
+@media (max-width: 705px) {
     .card img {
         width: 40vw;
         height: 40vw;

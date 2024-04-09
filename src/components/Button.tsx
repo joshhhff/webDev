@@ -17,7 +17,7 @@ function Button({link, text, isSubmit, arrow}: ButtonProps) {
     }
     
     return (
-        isSubmit ? (<button onClick={onClick}>{text}</button>) : (
+        isSubmit ? (<motion.button onClick={onClick} className="button" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>{text} {arrow ? <GoArrowRight /> : ''}</motion.button>) : (
             <a href={link}>
                 <motion.button className="button" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                     {text} {arrow ? <GoArrowRight /> : ''}

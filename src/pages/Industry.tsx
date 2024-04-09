@@ -4,7 +4,7 @@ import SubNavBar from '../components/SubNavBar';
 import BlueCard from '../components/BlueCard';
 import '../css/page-css/Pages.css';
 
-function ServicesTrainingAndMentoring() {
+function Industry() {
   return (
     <>
     <NavBar />
@@ -77,4 +77,4 @@ function ServicesTrainingAndMentoring() {
     );
 }
 
-export default ServicesTrainingAndMentoring;
+export default Industry;

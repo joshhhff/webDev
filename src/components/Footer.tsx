@@ -10,9 +10,9 @@ function Footer() {
         console.log('on home page');
 
         motionProps = {
-            initial: {opacity: 0, translateX: -100},
-            whileInView: {opacity: 1, translateX: 0},
-            transition: {duration: 1},
+            initial: { translateX: -100},
+            whileInView: { translateX: 0},
+            transition: { duration: 1 },
             viewport: {once: true},
         }
     }
@@ -23,7 +23,6 @@ function Footer() {
             <p>
                 CO456 Web Development - Joshua Ford: 100181709<br/>Built using React
             </p>
-
             <motion.div className="spinning-image-container" animate={{ rotate: 360}} transition={{ duration: 6, repeat: Infinity, ease: 'linear' }} viewport={{ once: true }}>
                 <img className="spinning-image" src="./React-icon.png" alt="" />
             </motion.div>

@@ -1,13 +1,14 @@
 .footer {
-	margin-top: auto;
+	margin-top: auto !important;
 	text-align: center;
 	padding: 30px 0;
 	font-family: "Ubuntu", sans-serif;
 	display: flex;
 	flex-direction: column;
 	color: #fff;
-    background-color: #1F1F25;
+    background-color: #15191b;
     margin: 0;
+	width: 100%;
 }
 
 .footer p {

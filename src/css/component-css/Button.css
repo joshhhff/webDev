@@ -1,6 +1,6 @@
 .button {
-    border: 1px solid white;
-    background-color: #0F0F25;
+    border: 0;
+    background-color: #15191b;
     width: 10.417vw;
     border-radius: 10px;
     color: white;
@@ -15,7 +15,7 @@
     color: black;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 705px) {
     .button {
         width: 20vw;
         height: 10vw;

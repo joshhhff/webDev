@@ -1,0 +1,194 @@
+.button {
+    border: 1px solid white;
+    background-color: #141313;
+    width: 10.417vw;
+    border-radius: 10px;
+    color: white;
+    height: 3vw;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 0.833vw;
+    align-self: center;
+    margin: 10px 0 10px;
+}
+
+.weatherApiContainer {
+	height: fit-content;
+	padding: 20px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	text-align: center;
+	margin-bottom: 20px;
+	align-items: center;
+	width: 90vw; 
+	background-color: #2f363b;
+	border-radius: 20px;
+    gap: 20px;
+}
+
+.info {
+    text-align: center;
+    margin: auto;
+}
+
+.apiLogo {
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.weatherForecast {
+	padding: 20px;
+	border-radius: 15px;;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: white;
+	width: 100%;
+
+}
+
+.enterLocationContainer {
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+    text-align: center;
+}
+
+.enterLocationInput {
+	height: 5vh;
+    width: 10.417vw;
+    align-self: center;
+	border-radius: 10px;
+	border: 1px solid black;
+    justify-content: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.weatherHeader {
+    font-weight: bold;
+	font-size: 16pt;
+}
+
+.sunRiseAndSet {
+    margin: auto;
+}
+
+.sunRiseAndSet p{
+    margin: 0;
+}
+
+.weatherTable {
+    width: 100%;
+    margin: auto;
+}
+
+.weatherTable th {
+    width: 60px;
+}
+
+.weatherTable td {
+    width: 60px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.weatherTable td div {
+    width: fit-content;
+    margin: auto;
+}
+
+.weatherTable td p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.weatherRow:hover {
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.weatherRow td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+.weatherRow td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+
+
+.loadingMessage {
+    font-weight: bold;
+    margin: 0;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: bold;
+    margin: 0;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popupContent {
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    margin: 10% auto;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+@media (max-width: 705px) {
+    .weatherApiContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .weatherForecast {
+        width: 100%;
+    }
+
+    .button {
+        width: 30vw;
+        height: 8vw;
+        font-size: 3vw;
+    }
+
+    .weatherTable {
+        font-size: 3vw;
+    }
+
+    .enterLocationInput {
+        width: 30vw;
+    }
+
+    .apiLogo {
+        width: 50vw;
+    }
+
+    .weatherTable div img {
+        width: 8vw;
+    }
+
+    .weatherTable tr {
+        border-bottom: 1px dashed #1F1F25;
+    }
+}

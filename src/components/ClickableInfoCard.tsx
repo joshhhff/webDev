@@ -4,12 +4,13 @@ import { motion } from 'framer-motion';
 interface InfoCardProps {
   title: string;
   image: string;
+  link: string;
 }
 
-function InfoCard({title, image}: InfoCardProps) {
+function ClickableInfoCard({title, image, link}: InfoCardProps) {
     return (
       <motion.div className="card" initial={{  translateY: +100 }} whileInView={{ translateY: 0 }} viewport={{ once: true }}>
-        <img className="card-img-top" src={image} alt="Card image cap" />
+        <a href={link} target="_"><motion.img className="clickableCard" src={image} alt="Card image cap" whileHover={{ borderRadius: "20%" }}/></a>
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
         </div>
@@ -17,4 +18,4 @@ function InfoCard({title, image}: InfoCardProps) {
       );
 }
 
-export default InfoCard;
+export default ClickableInfoCard;

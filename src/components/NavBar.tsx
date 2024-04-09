@@ -14,16 +14,14 @@ function NavBar() {
     if (location.endsWith('/')) {
         console.log('on home page');
 		motionPropsLogo = {
-			initial: { opacity: 0, translateX: -100 },
-			animate: { opacity: 1, translateX: 0 },
-			transition: { duration: 1} 
-		  };
+			initial: { translateX: -100 },
+			animate: { translateX: 0 }
+		};
 	  
-		  motionPropsLinks = {
-			initial: { opacity: 0, translateX: +100 },
-			animate: { opacity: 1, translateX: 0 },
-			transition: { duration: 1} 
-		  };
+		motionPropsLinks = {
+			initial: { translateX: +100 },
+			animate: { translateX: 0 }
+		};
     } else {
         console.log('not home page')
     }
@@ -33,7 +31,7 @@ function NavBar() {
 			<motion.div className="nav-icons" {...motionPropsLogo}>
 				<div className="nav-icon-container"><a href="./CV.pdf"><GoDownload className="nav-icon"/></a></div>
 				<div className="nav-icon-container"><a href="mailto: joshfordd2004@gmail.com"><GoMail className="nav-icon" /></a></div>
-				<div className="nav-icon-container"><a href="https://uk.linkedin.com/in/josh-ford-1112a925b?trk=people-guest_people_search-card"><RiLinkedinBoxFill className="nav-icon" /></a></div>
+				<div className="nav-icon-container"><a href="https://uk.linkedin.com/in/josh-ford-1112a925b?trk=people-guest_people_search-card" target='_'><RiLinkedinBoxFill className="nav-icon" /></a></div>
 			</motion.div>
 			<input type="checkbox" id="nav_check" hidden />
 			<motion.nav {...motionPropsLinks}>

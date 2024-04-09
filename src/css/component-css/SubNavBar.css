@@ -1,12 +1,11 @@
 .subnavbar-container {
-    background-color: #0F0F25;
+    background-color: #24292e;
 }
 
 .sub-navbar {
     display: flex;
     justify-content: center;
     margin: 0 20px 0 20px;
-    background-color: #35353b;
 }
 
 .sub-navlist {
@@ -27,17 +26,16 @@
     color: #414141;
     font-weight: 500;
     border: 3px solid transparent;
-    transition: 0.2s;
 }
 
 .sub-navlist li a:hover {
-    color: white;
-    border-bottom-color: white;
+    color: orange;
+    border-bottom-color: orange;
 }
 
 .sub-navlist li a.active {
-    color: white;
-    border-bottom-color: white;
+    color: orange;
+    border-bottom-color: orange;
 }
 
 .sub-navlist li a.active:hover {
