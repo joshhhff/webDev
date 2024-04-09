@@ -20,7 +20,7 @@ function Home() {
     let i: number;
 
     function typeText(text: string, setState: React.Dispatch<React.SetStateAction<string>>, speed: number, isTitle: boolean, isMessage: boolean) {
-        let textFinished = false;
+        let allTextTyped = false;
         const title = document.getElementById('title');
         const message = document.getElementById('message');
         if (i < text.length) {
@@ -30,7 +30,7 @@ function Home() {
             title && isTitle ? title.style.borderRight = '5px solid white' : null;  //if isTitle = true then typing cursor is white
             message && isMessage ? message.style.borderRight = '5px solid orange' : null;   //if isMessage = true then typing cursor is orange
         } else {
-            textFinished = true;
+            allTextTyped = true;
             title && isTitle ? title.style.borderRight = 'none' : null;
             if (viewportWidth > 1543) {
                 message && isMessage ? flashingCursor() : null;
