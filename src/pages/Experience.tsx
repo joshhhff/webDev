@@ -11,7 +11,7 @@ function Services() {
     const [visible2, setVisible2] = useState(false);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({top: 0, left: 0, behavior: 'instant'});    //react-router-dom remembers scroll position so this elimantes that
         document.title = 'Experience';
         const handleResize = () => {
             const viewportWidth = document.documentElement.clientWidth;
