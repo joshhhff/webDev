@@ -57,8 +57,8 @@ function Home() {
 
     useEffect(() => {
         document.title = 'Home';
-        const title = "Hi, I'm Josh!";
-        const message = "Computer Science student - Software Developer";
+        const title = "Hii, I'm Josh!";
+        const message = "Coomputer Science student - Software Developer";
     
         i = 0;
         typeText(title, setTypedTitle, 150, true, false);   //pass in title string, typedTitle state, type speed, isTitle = true, isMessage = false
