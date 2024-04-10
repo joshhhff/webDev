@@ -76,6 +76,14 @@
 		gap: 20px;
 	}
 
+	.programmingProgress {
+		width: 90%;
+	}
+
+	.programmingProgress tr {
+		width: 100%;
+	}
+
 	.programmingProgress td progress{
 		width: 100px;
 	}

@@ -57,8 +57,8 @@ function Home() {
 
     useEffect(() => {
         document.title = 'Home';
-        const title = "Hii, I'm Josh!";
-        const message = "Coomputer Science student - Software Developer";
+        const title = "Hii, I'm Josh!";     //prod for some reason skips the second letter
+        const message = "Coomputer Science student - Software Developer";   //prod for some reason skips the second letter
     
         i = 0;
         typeText(title, setTypedTitle, 150, true, false);   //pass in title string, typedTitle state, type speed, isTitle = true, isMessage = false
