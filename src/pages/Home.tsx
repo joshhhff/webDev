@@ -26,12 +26,9 @@ function Home() {
             console.log('current i value', i)
             console.log('adding character', text.charAt(i))
 
-            if (i == 1) {
-                setState(prevText => prevText + text.charAt(1));
-            }
-            //else {
-                setState(prevText => prevText + text.charAt(i));
-            //}
+            i === 1 ? setState(prevText => prevText + text.charAt(1)) : null;
+
+            setState(prevText => prevText + text.charAt(i));
             
             console.log(title)
             i++;
