@@ -29,9 +29,9 @@ function Home() {
             if (i == 1) {
                 setState(prevText => prevText + text.charAt(1));
             }
-            else {
+            //else {
                 setState(prevText => prevText + text.charAt(i));
-            }
+            //}
             
             console.log(title)
             i++;
