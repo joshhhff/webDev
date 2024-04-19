@@ -12,7 +12,6 @@ function NavBar() {
   	let motionPropsLinks;
 
     if (location.endsWith('/')) {
-        console.log('on home page');
 		motionPropsLogo = {
 			initial: { translateX: -100 },
 			animate: { translateX: 0 }

@@ -9,9 +9,6 @@ import { useEffect, useState } from 'react';
 
 function Home() {
 
-    const viewportWidth = document.documentElement.clientWidth;
-    console.log(viewportWidth)
-
     const [typedTitle, setTypedTitle] = useState('');
     const [typedMessage, setTypedMessage] = useState('');
     const [visibleButton, setVisibleButton] = useState(false);
@@ -24,9 +21,10 @@ function Home() {
         const title = document.getElementById('title');
         const message = document.getElementById('message');
 
+        console.log(text)
         console.log(title)
-        console.log('current i value', i)
         if (i < text.length) {
+            console.log('current i value', i)
             setState(prevText => prevText + text.charAt(i));
             i++;
             typingTimer = setTimeout(() => typeText(text, setState, speed, isTitle, isMessage), speed); //call the function again if all of text has not been "typed"

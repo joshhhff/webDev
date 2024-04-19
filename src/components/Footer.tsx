@@ -7,7 +7,6 @@ function Footer() {
 
     let motionProps
     if (location.endsWith('/')) {
-        console.log('on home page');
 
         motionProps = {
             initial: { translateX: -100},
