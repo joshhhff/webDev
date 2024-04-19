@@ -10,10 +10,11 @@ import { useEffect, useState } from 'react';
 function Home() {
 
     const viewportWidth = document.documentElement.clientWidth;
+    console.log(viewportWidth)
 
     const [typedTitle, setTypedTitle] = useState('');
     const [typedMessage, setTypedMessage] = useState('');
-    const [visibleButton, setVisibleButton] = useState(false)
+    const [visibleButton, setVisibleButton] = useState(false);
 
     //typingTimer and i set outside of useEffect hook - i is compared against text length
     let typingTimer: number;
@@ -26,39 +27,35 @@ function Home() {
             setState(prevText => prevText + text.charAt(i));
             i++;
             typingTimer = setTimeout(() => typeText(text, setState, speed, isTitle, isMessage), speed); //call the function again if all of text has not been "typed"
-            title && isTitle ? title.style.borderRight = '5px solid white' : null;  //if isTitle = true then typing cursor is white
-            message && isMessage ? message.style.borderRight = '5px solid orange' : null;   //if isMessage = true then typing cursor is orange
         } else {
-            title && isTitle ? title.style.borderRight = 'none' : null;
-            if (viewportWidth > 1543) {
-                message && isMessage ? flashingCursor() : null;
-            } else {
-                message ? message.style.borderRight = 'none' : null;
-                isMessage ? setVisibleButton(true) : null;
+            title && isTitle ? title.style.borderRight = 'none' : null; //remove border from main title
+            if (message && isMessage) {
+                message.style.borderRight = 'none';
+                message.style.width = '42vw';  //change the fit-content which allows border to follow letters
+                flashingCursor();
             }
             i = 0; // Reset the index for next typing
         }
     }
 
     function flashingCursor() {
-        const flashingCursor = document.getElementById("message");
         let visible = true;
-        setVisibleButton(true)
+        setVisibleButton(true);
 
         setInterval(() => {
             if (visible) {
-                flashingCursor ? flashingCursor.style.borderRight = '5px solid transparent' : null;
+                setTypedMessage(typedMessage => typedMessage + '|');
             } else {
-                flashingCursor ? flashingCursor.style.borderRight = '5px solid orange' : null;
+                setTypedMessage(typedMessage => typedMessage.slice(0, -1));
             }
             visible = !visible;
-        }, 500);
+        }, 500)
     }
 
     useEffect(() => {
         document.title = 'Home';
-        const title = "Hii, I'm Josh!";     //prod for some reason skips the second letter
-        const message = "Coomputer Science student - Software Developer";   //prod for some reason skips the second letter
+        const title = "Hi, I'm Josh!";
+        const message = "Computer Science student - Software Developer";
     
         i = 0;
         typeText(title, setTypedTitle, 150, true, false);   //pass in title string, typedTitle state, type speed, isTitle = true, isMessage = false

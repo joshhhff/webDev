@@ -34,6 +34,7 @@
 	.mainBody h3.homePageHeader {
 		font-weight: bold;
 		text-align: left;
+		width: 90%;
 	}
 
 	.mainBody .subPageHeader {
@@ -77,7 +78,7 @@
 	}
 
 	.programmingProgress {
-		width: 90%;
+		width: 100%;
 	}
 
 	.programmingProgress tr {
