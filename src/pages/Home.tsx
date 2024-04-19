@@ -23,6 +23,8 @@ function Home() {
     function typeText(text: string, setState: React.Dispatch<React.SetStateAction<string>>, speed: number, isTitle: boolean, isMessage: boolean) {
         const title = document.getElementById('title');
         const message = document.getElementById('message');
+
+        console.log(title)
         if (i < text.length) {
             setState(prevText => prevText + text.charAt(i));
             i++;
