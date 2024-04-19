@@ -25,7 +25,7 @@ function Home() {
         if (i < text.length) {
             console.log('current i value', i)
             console.log('adding character', text.charAt(i))
-            setState(prevText => prevText + text.charAt(1));
+            setState(prevText => prevText + text.charAt(i));
             console.log(title)
             i++;
             typingTimer = setTimeout(() => typeText(text, setState, speed, isTitle, isMessage), speed); //call the function again if all of text has not been "typed"
