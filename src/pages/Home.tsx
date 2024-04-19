@@ -25,6 +25,7 @@ function Home() {
         const message = document.getElementById('message');
 
         console.log(title)
+        console.log('current i value', i)
         if (i < text.length) {
             setState(prevText => prevText + text.charAt(i));
             i++;
