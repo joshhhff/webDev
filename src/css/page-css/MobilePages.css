@@ -1,5 +1,8 @@
 /*MOBILE VERSION*/
 @media (max-width: 705px) {
+	body{
+		overflow-x: hidden;
+	}
     .section {
         flex-direction: column; /* Change to a column layout on smaller screens */
     }
