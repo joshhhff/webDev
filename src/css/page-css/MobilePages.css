@@ -34,7 +34,7 @@
 	.mainBody h3.homePageHeader {
 		font-weight: bold;
 		text-align: left;
-		width: 90%;
+		border-right: none;
 	}
 
 	.mainBody .subPageHeader {
@@ -90,6 +90,7 @@
 	}
 	
 	.programmingProgress td img {
+		width: 50px;
 		filter: drop-shadow(5vw 0 5px#2f363b);
 	}
 

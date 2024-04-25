@@ -25,7 +25,7 @@
 .mainBody h1.homePageHeader {
 	font-weight: bold;
 	color: white;
-	border-right: 1px solid white;
+	border-right: 5px solid white;
     text-align: left;
 	width: fit-content;
 }

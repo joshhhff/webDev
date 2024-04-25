@@ -21,7 +21,7 @@ function ContactForm() {
         const subject = subjectElement?.value || '';
         const message = messageElement?.value || '';
     
-        const content = `Name: ${name}\n\n${message}`;
+        const content = `Name: ${name}%0D%0A${message}`;    //%0D%0A forces line break
     
         window.open(`mailto:joshfordd2004@gmail.com?subject=${subject}&body=${content}`);
     }

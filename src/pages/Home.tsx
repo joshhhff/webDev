@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 function Home() {
+    const url = window.location.href;
 
     const [typedTitle, setTypedTitle] = useState('');
     const [typedMessage, setTypedMessage] = useState('');
@@ -21,23 +22,17 @@ function Home() {
         const title = document.getElementById('title');
         const message = document.getElementById('message');
 
-        console.log(text)
         if (i < text.length) {
-            console.log('current i value', i)
-            console.log('adding character', text.charAt(i))
-
-            i === 1 ? setState(prevText => prevText + text.charAt(1)) : null;
-
+            if (!url.includes('localhost')) {
+                i === 1 ? setState(prevText => prevText + text.charAt(1)) : null;   //for some unknown reason prod skips second position of strings
+            }
             setState(prevText => prevText + text.charAt(i));
-            
-            console.log(title)
             i++;
             typingTimer = setTimeout(() => typeText(text, setState, speed, isTitle, isMessage), speed); //call the function again if all of text has not been "typed"
         } else {
             title && isTitle ? title.style.borderRight = 'none' : null; //remove border from main title
             if (message && isMessage) {
                 message.style.borderRight = 'none';
-                message.style.width = '42vw';  //change the fit-content which allows border to follow letters
                 flashingCursor();
             }
             i = 0; // Reset the index for next typing
