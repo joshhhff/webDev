@@ -24,7 +24,7 @@ function Home() {
 
         if (i < text.length) {
             if (!url.includes('localhost')) {
-                i === 1 ? setState(prevText => prevText + text.charAt(1)) : null;   //for some unknown reason prod skips second position of strings
+                i === 1 ? setState(prevText => prevText + text.charAt(1)) : null;   //for some unknown reason prod skips second index of strings
             }
             setState(prevText => prevText + text.charAt(i));
             i++;

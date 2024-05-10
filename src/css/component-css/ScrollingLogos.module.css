@@ -1,0 +1,36 @@
+.outerBorder {
+    width: 50vw;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.logoScroll {
+	display: flex;
+	list-style-type: none;
+    animation: loop 10s linear infinite;
+    width: fit-content;
+    height: fit-content;
+    gap: 2vw;
+    margin: 0;
+}
+
+.logoScroll li {
+    margin: auto;
+}
+
+.logoScroll img {
+	display: flex;
+	width: 100px;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

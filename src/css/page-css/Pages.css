@@ -35,7 +35,7 @@
 	color: orange;
 	border-right: 5px solid orange;
     text-align: left;
-	width: fit-content;
+	width: max-content;
 }
 
 .mainBody h1.pageHeader {
@@ -61,7 +61,7 @@
 	text-align: left;
 	margin-bottom: 20px;
 	align-items: center;
-	width: 99vw; 
+	width: 99vw;
 }
 
 .section2 {

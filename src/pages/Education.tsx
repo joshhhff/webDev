@@ -1,6 +1,7 @@
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SubNavBar from '../components/SubNavBar';
+import BlueCard from '../components/BlueCard';
 import '../css/page-css/Pages.css';
 
 function Education() {
@@ -26,8 +27,12 @@ function Education() {
                         <li><span className="listHeader">Burnley College / Buckinghamshire New University (2023 - )</span><br/>Degree Apprenticeship in Digital, Technical Solutions</li>
                     </div>
                 </section>
-
                 <hr />
+                <section className="flex flex-row">
+                    <BlueCard title="" description="test" hasButton={false} link=""/>
+                    <BlueCard title="" description="test" hasButton={false} link=""/>
+                    <BlueCard title="" description="test" hasButton={false} link=""/>
+                </section>
             </div>
         </div>
         <Footer />

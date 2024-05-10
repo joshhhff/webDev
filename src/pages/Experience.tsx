@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import WeatherAPICall from '../components/WeatherAPICall';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
+import ScrollingLogos from '../components/ScrollingLogos';
 import '../css/page-css/Pages.css';
 
 function Services() {
@@ -58,6 +59,7 @@ function Services() {
                 </div>
                 <section className='section2'>
                 <motion.h1 {...revealAnimation} className="subPageHeader">Programming Languages</motion.h1>
+                <ScrollingLogos />
                     <motion.table className='programmingProgress' {...revealAnimation}>
                         <motion.tr {...revealAnimation}>
                             <td><img src="./JavaScript-logo.png" alt="" /></td>

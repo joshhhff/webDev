@@ -30,8 +30,6 @@ function BlueCard({title, description, hasButton, link}: BlueCardProps) {
             <div className={styles.cardBody}>
                 <h1>{title}</h1>
                 <p>{description}</p>
-                <div className="button">
-                </div>
             </div>
         )
     }

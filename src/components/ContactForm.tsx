@@ -28,7 +28,7 @@ function ContactForm() {
     return (
         <motion.div className={styles.formContainer} {...revealAnimation}>
             <div className={styles.inputs}>
-                <input id="name" type="text" placeholder="Name" />
+                <input id="name" type="text" placeholder="Name" name="name" />
                 <input id="subject" type="text" placeholder="Subject" />
                 {viewportWidth > 705 && (
                     <motion.button onClick={createEmail} className={styles.button} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>SEND</motion.button>
