@@ -2,30 +2,11 @@ import { NavLink } from 'react-router-dom';
 import { GoDownload, GoMail } from 'react-icons/go';
 import { RiLinkedinBoxFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
-import { useEffect } from 'react';
 import '../css/component-css/NavBar.css';
   
 function NavBar() {
 
 	const location = window.location.href;
-  
-  	let motionPropsLogo;
-  	let motionPropsLinks;
-
-    if (location.endsWith('/')) {
-		motionPropsLogo = {
-			initial: { translateX: -100 },
-			animate: { translateX: 0 }
-		};
-	  
-		motionPropsLinks = {
-			initial: { translateX: +100 },
-			animate: { translateX: 0 }
-		};
-    } else {
-        console.log('not home page')
-    }
-	
 	const nav = document.getElementById('nav');
 
 	function increaseOpacity() {
@@ -48,6 +29,23 @@ function NavBar() {
 			nav ? nav.style.opacity = '100%' : null;
 		}
 	})
+  
+  	let motionPropsLogo;
+  	let motionPropsLinks;
+
+    if (location.endsWith('/')) {
+		motionPropsLogo = {
+			initial: { translateX: -100 },
+			animate: { translateX: 0 }
+		};
+	  
+		motionPropsLinks = {
+			initial: { translateX: +100 },
+			animate: { translateX: 0 }
+		};
+    } else {
+        console.log('not home page')
+    }
 	
 	
     return (
