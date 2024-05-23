@@ -116,4 +116,18 @@
 	.horizontalCards {
 		flex-direction: column;
 	}
+
+	.hobbies {
+		flex-direction: column;
+	}
+
+	.hobby {
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+
+	.hobby .maxImg {
+		max-width: 100%;
+	}
 }

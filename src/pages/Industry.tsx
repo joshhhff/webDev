@@ -2,10 +2,19 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SubNavBar from '../components/SubNavBar';
 import BlueCard from '../components/WhiteCard';
+import { motion } from 'framer-motion';
 import '../css/page-css/Pages.css';
 
 function Industry() {
   window.scrollTo({top: 0, left: 0, behavior: 'instant'});    //react-router-dom remembers scroll position so this elimantes that
+  const viewportWidth = document.documentElement.clientWidth;
+
+    let revealAnimation = {
+        initial: viewportWidth <= 680 ? { opacity: 0, translateX: +100 } : { opacity: 0, translateY: +100 },
+        whileInView: viewportWidth <= 680 ? { opacity: 1, translateX: 0} : { opacity: 1, translateY: 0},
+        viewport: { once: true },
+    }
+  
   return (
     <>
     <NavBar />
@@ -18,13 +27,13 @@ function Industry() {
             <div className="mainBody" style={{ paddingTop: '70px'}}>
                 <h1 className="pageHeader">INDUSTRY</h1>
                 <section className="section">
-                    <div className="educationList">
+                    <motion.div className="educationList" {...revealAnimation}>
                         <li><span className="listHeader">GoLive Experts (2023 - )</span><br/>Junior NetSuite Developer</li>
                         <li><span className="listHeader">Experienced in using APIs</span><br/>I have experience in using many APIs, including REST APIs & GraphQL APIs</li>
-                    </div>
-                    <div className="img cropped">
+                    </motion.div>
+                    <motion.div className="img cropped" {...revealAnimation}>
                     <img src="./Industry.png" />
-                    </div>
+                    </motion.div>
                 </section>
                 <section className="horizontalCards">
                     <BlueCard title="Education" description="Click here to learn about my education" hasButton={true} buttonHasArrow={true} link="/webDev/#/experience/education"/>
