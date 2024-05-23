@@ -59,7 +59,7 @@ function Services() {
                 </div>
                 <section className='section2'>
                 <motion.h1 {...revealAnimation} className="subPageHeader">Programming Languages</motion.h1>
-                <ScrollingLogos />
+                <ScrollingLogos width="50vw" />
                     <motion.table className='programmingProgress' {...revealAnimation}>
                         <motion.tr {...revealAnimation}>
                             <td><img src="./JavaScript-logo.png" alt="" /></td>

@@ -112,4 +112,8 @@
 		width: 100%;
 		margin: auto;
 	}
+
+	.horizontalCards {
+		flex-direction: column;
+	}
 }

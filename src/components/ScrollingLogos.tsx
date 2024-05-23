@@ -1,7 +1,11 @@
 import styles from '../css/component-css/ScrollingLogos.module.css';
 import { motion } from 'framer-motion';
 
-function ScrollingLogos() {
+interface ScrollingLogosProps {
+    width: string,
+}
+
+function ScrollingLogos({width}: ScrollingLogosProps) {
 
     const viewportWidth = document.documentElement.clientWidth;
 
@@ -14,7 +18,7 @@ function ScrollingLogos() {
 
     return (
         <>
-        <motion.div className={styles.outerBorder} {...revealAnimation}>
+        <motion.div className={styles.outerBorder} {...revealAnimation} style={{ width: width}}>
             <ul className={styles.logoScroll}>
                 <li><img src="./JavaScript-logo.png" alt="" /></li>
                 <li><img src="./HTML-Logo.jpg" alt="" /></li>

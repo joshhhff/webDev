@@ -2,6 +2,7 @@
     background-color: white;
     height: 300px;
     width: 400px;
+    margin: 20px;
     margin-bottom: 10px;
     font-family: 'Fira Sans', sans-serif;
     padding: 50px 0 0 25px;
@@ -9,7 +10,7 @@
 }
 
 .cardBody h1, .cardBody p {
-    color: white !important;
+    color: black !important;
     font-weight: 200 !important;
     text-align: left !important;
     padding-right: 10px;

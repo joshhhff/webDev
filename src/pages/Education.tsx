@@ -27,11 +27,10 @@ function Education() {
                         <li><span className="listHeader">Burnley College / Buckinghamshire New University (2023 - )</span><br/>Degree Apprenticeship in Digital, Technical Solutions</li>
                     </div>
                 </section>
-                <hr />
-                <section className="flex flex-row">
-                    <BlueCard title="" description="test" hasButton={false} link=""/>
-                    <BlueCard title="" description="test" hasButton={false} link=""/>
-                    <BlueCard title="" description="test" hasButton={false} link=""/>
+                <section className="horizontalCards">
+                    <BlueCard title="BTEC" description="Finished with DDD" hasButton={false} buttonHasArrow={false} link=""/>
+                    <BlueCard title="University" description="In Progress" hasButton={false} buttonHasArrow={false} link=""/>
+                    <BlueCard title="Industry" description="Click here to learn about my experience in the industry" hasButton={true} link="/webDev/#/experience/industry" buttonHasArrow={true}/>
                 </section>
             </div>
         </div>

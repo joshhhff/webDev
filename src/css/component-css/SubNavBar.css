@@ -29,13 +29,13 @@
 }
 
 .sub-navlist li a:hover {
-    color: orange;
-    border-bottom-color: orange;
+    color: white;
+    border-bottom-color: white;
 }
 
 .sub-navlist li a.active {
-    color: orange;
-    border-bottom-color: orange;
+    color: white;
+    border-bottom-color: white;
 }
 
 .sub-navlist li a.active:hover {

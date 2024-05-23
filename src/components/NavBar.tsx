@@ -2,9 +2,10 @@ import { NavLink } from 'react-router-dom';
 import { GoDownload, GoMail } from 'react-icons/go';
 import { RiLinkedinBoxFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import '../css/component-css/NavBar.css';
   
-function NavBar() { 
+function NavBar() {
 
 	const location = window.location.href;
   
@@ -25,8 +26,32 @@ function NavBar() {
         console.log('not home page')
     }
 	
+	const nav = document.getElementById('nav');
+
+	function increaseOpacity() {
+		if (scrollY !== 0 && nav){
+			nav.style.opacity = '100%';
+		}
+	}
+
+	function decreaseOpacity() {
+		if (scrollY !== 0 && nav){
+			nav.style.opacity = '50%';
+		}
+	}
+
+	addEventListener("scroll", () => {
+		if (scrollY !== 0 && nav){
+			console.log('auto decrease')
+			nav.style.opacity = '50%';
+		} else {
+			nav ? nav.style.opacity = '100%' : null;
+		}
+	})
+	
+	
     return (
-		<div className="navbar"> 
+		<div className="navbar" id="nav" onMouseOver={increaseOpacity} onMouseLeave={decreaseOpacity}> 
 			<motion.div className="nav-icons" {...motionPropsLogo}>
 				<div className="nav-icon-container"><a href="./CV.pdf"><GoDownload className="nav-icon"/></a></div>
 				<div className="nav-icon-container"><a href="mailto: joshfordd2004@gmail.com"><GoMail className="nav-icon" /></a></div>

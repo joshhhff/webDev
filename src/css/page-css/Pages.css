@@ -12,6 +12,7 @@
 	flex-direction: column;
 	align-items: center;
 	font-family: 'Fira Sans', sans-serif;
+	padding-top: 100px;
 }
 
 .mainBody h1 {
@@ -33,7 +34,6 @@
 .mainBody h3.homePageHeader {
 	font-weight: bold;
 	color: orange;
-	border-right: 5px solid orange;
     text-align: left;
 	width: max-content;
 }
@@ -163,9 +163,25 @@
 	margin-bottom: 20px;
 }
 
+.horizontalCards {
+	height: fit-content;
+	padding: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: left;
+	align-items: center;
+	width: 99vw; 
+	background-color: #2f363b;
+}
+
 .listHeader {
 	font-weight: bold;
 	font-size: 18px;
+}
+
+.cropped img {
+	width: 400px;
+	height: 300px;
 }
 
 .programmingProgress {
@@ -224,4 +240,27 @@
 
 .clickableCard:hover {
 	filter: brightness(70%);
+}
+
+.hobbies {
+	width: 99vw;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.hobby {
+	width: 30%;
+	background-color: white;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 20px;
+	color: black;
+	text-align: center;
+}
+
+.hobbiesHeader {
+	font-size: 30pt !important;
+	text-align: left;
+	border-bottom: 2px solid #2f363b;
+	text-align: center;
 }

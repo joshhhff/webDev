@@ -7,9 +7,10 @@ import '../css/page-css/Pages.css';
 import { motion } from 'framer-motion';
 
 function ContactMe() {
-  document.title = 'Contact Me';
+  	document.title = 'Contact Me';
+  	window.scrollTo({top: 0, left: 0, behavior: 'instant'});    //react-router-dom remembers scroll position so this elimantes that
 
-  const viewportWidth = document.documentElement.clientWidth;
+  	const viewportWidth = document.documentElement.clientWidth;
 
     let revealAnimation = {
         initial: viewportWidth <= 680 ? { opacity: 0, translateX: +100 } : { opacity: 0, translateY: +100 },

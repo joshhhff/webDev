@@ -6,9 +6,10 @@ interface BlueCardProps {
     description: string;
     hasButton: boolean;
     link: string;
+    buttonHasArrow: boolean;
 }
 
-function BlueCard({title, description, hasButton, link}: BlueCardProps) {
+function BlueCard({title, description, hasButton, link, buttonHasArrow}: BlueCardProps) {
 
     if (hasButton) {
         return (
@@ -20,7 +21,7 @@ function BlueCard({title, description, hasButton, link}: BlueCardProps) {
                         link={link}
                         text="LEARN MORE"
                         isSubmit={false}
-                        arrow={false}
+                        arrow={buttonHasArrow}
                     />
                 </div>
             </div>
