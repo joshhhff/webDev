@@ -139,4 +139,8 @@
 	.projectCards div {
 		margin: auto;
 	}
+
+	.hobbiesCardContainer div {
+		width: 90%;
+	}
 }

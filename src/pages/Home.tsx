@@ -85,7 +85,7 @@ function Home() {
                                 <InfoCard title="WMS Customisations" image="./WMS.png"/>
                             </div>
                         </div>
-                        <div style={{ alignContent: 'center'}}><BlueCard title="My Hobbies" description="Learn more about me and what I like doing in my spare time" hasButton={true} link="/webDev/#/hobbies" buttonHasArrow={true} /></div>
+                        <div style={{ alignContent: 'center'}} className="hobbiesCardContainer"><BlueCard title="My Hobbies" description="Learn more about me and what I like doing in my spare time" hasButton={true} link="/webDev/#/hobbies" buttonHasArrow={true} /></div>
                     </div>
             </motion.section>
         </div>
