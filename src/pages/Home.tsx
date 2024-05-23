@@ -79,7 +79,7 @@ function Home() {
                     <div className='cards'>
                         <div className="projects" style={{ width: '60%'}}>
                             <motion.h4 initial={{ opacity: 0, translateY: +100 }} whileInView={{ opacity: 1, translateY: 0 }} viewport={{ once: true }} style={{ textAlign: 'center'}}>RECENT PROJECTS</motion.h4>
-                            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+                            <div className="projectCards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
                                 <InfoCard title="Weather App" image="./WeatherProject.png"/>
                                 <InfoCard title="System Integrations" image="./System Integration.jpg"/>
                                 <InfoCard title="WMS Customisations" image="./WMS.png"/>

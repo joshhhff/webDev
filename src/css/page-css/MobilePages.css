@@ -130,4 +130,13 @@
 	.hobby .maxImg {
 		max-width: 100%;
 	}
+
+	.projectCards {
+		flex-direction: column !important;
+		gap: 20px;
+	}
+
+	.projectCards div {
+		margin: auto;
+	}
 }
