@@ -18,7 +18,7 @@ function ScrollingLogos({width}: ScrollingLogosProps) {
 
     return (
         <>
-        <motion.div className={styles.outerBorder} {...revealAnimation} style={{ width: width}}>
+        <motion.div className={styles.outerBorder} id="scrollingLogos" {...revealAnimation} style={{ width: width}}>
             <ul className={styles.logoScroll}>
                 <li><img src="./JavaScript-logo.png" alt="" /></li>
                 <li><img src="./HTML-Logo.jpg" alt="" /></li>

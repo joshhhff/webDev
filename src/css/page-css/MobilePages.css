@@ -143,4 +143,8 @@
 	.hobbiesCardContainer div {
 		width: 90%;
 	}
+
+	#scrollingLogos {
+		width: 100% !important;
+	}
 }
