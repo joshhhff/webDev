@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 function Hobbies() {
 
-    document.title = 'Learn Programming';
+    document.title = 'My Hobbies';
     window.scrollTo({top: 0, left: 0, behavior: 'instant'});    //react-router-dom remembers scroll position so this elimantes that
 
     const viewportWidth = document.documentElement.clientWidth;
@@ -28,7 +28,7 @@ function Hobbies() {
                             <h1 className="hobbiesHeader">Pool & Snooker</h1>
                             <div className="hobbyContent">
                                 <p className="hobbyInfo">I enjoy playing pool & snooker several times during the week. I primarily play pool, and I tend to play at my local pub.<br/><br/>Sometimes I do also attend a sports hall where I will play snooker as well</p>
-                                <img src="./Pool.jpg" alt="" style={{ width: '200px', borderRadius: '10px'}}/>
+                                <img src="./Pool.jpg" alt="" style={{ width: '300px', borderRadius: '10px'}}/>
                             </div>
                         </div>
                         <div className="hobby">
@@ -51,7 +51,7 @@ function Hobbies() {
                             <h1 className="hobbiesHeader">Exercising</h1>
                             <div className="hobbyContent">
                                 <p className="hobbyInfo">I really enjoy keeping in shape, I go to the gym 5-6 days a week where I primarily take on a weightlifting style of training.<br/><br/>I also enjoy running, although I don't do this nearly as often as weightlifting. I have a sub 25 minute 5K time which I like to think is a decent time to say I primarily lift weights!</p>
-                                <img src="./Gaming.png" alt="" style={{ width: '200px', borderRadius: '10px'}}/>
+                                <img src="./Gym.png" alt="" style={{ width: '400px', borderRadius: '10px'}}/>
                             </div>
                         </div>
                     </div>

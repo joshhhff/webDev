@@ -4,7 +4,7 @@ import Button from '../components/Button';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import InfoCard from '../components/InfoCard';
-import BlueCard from '../components/BlueCard';
+import BlueCard from '../components/WhiteCard';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';

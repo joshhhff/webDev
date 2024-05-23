@@ -21,7 +21,7 @@ function Map() {
                 <p>Experienced in using APIs</p>
                 <Button
                 link="/webDev/#/experience"
-                text="About Me" 
+                text="My Experience" 
                 isSubmit={false}
                 arrow={true}
                 />

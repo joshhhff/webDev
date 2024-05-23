@@ -1,5 +1,5 @@
 import Button from './Button';
-import styles from '../css/component-css/BlueCard.module.css';
+import styles from '../css/component-css/WhiteCard.module.css';
 
 interface BlueCardProps {
     title: string;

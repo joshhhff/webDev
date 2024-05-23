@@ -1,7 +1,7 @@
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SubNavBar from '../components/SubNavBar';
-import BlueCard from '../components/BlueCard';
+import BlueCard from '../components/WhiteCard';
 import '../css/page-css/Pages.css';
 
 function Industry() {
@@ -15,7 +15,7 @@ function Industry() {
         links='/experience/education,/experience/industry'
       />
       <div className="background">
-            <div className="mainBody">
+            <div className="mainBody" style={{ paddingTop: '70px'}}>
                 <h1 className="pageHeader">INDUSTRY</h1>
                 <section className="section">
                     <div className="educationList">

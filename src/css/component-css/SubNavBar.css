@@ -1,5 +1,6 @@
 .subnavbar-container {
     background-color: #24292e;
+    padding-top: 70px;
 }
 
 .sub-navbar {
@@ -9,6 +10,7 @@
 }
 
 .sub-navlist {
+    position: fixed !important;
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -18,6 +20,7 @@
     background-color: #2d2d31;
     height: 50px;
     padding: 0;
+    transition: 0.2s ease-in-out;
 }
 
 .sub-navlist li a{

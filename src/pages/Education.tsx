@@ -1,7 +1,7 @@
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SubNavBar from '../components/SubNavBar';
-import BlueCard from '../components/BlueCard';
+import BlueCard from '../components/WhiteCard';
 import '../css/page-css/Pages.css';
 
 function Education() {
@@ -15,7 +15,7 @@ function Education() {
         />
 
         <div className="background">
-            <div className="mainBody">
+            <div className="mainBody" style={{ paddingTop: '70px'}}>
                 <h1 className="pageHeader">EDUCATION</h1>
                 <section className="section">
                     <div className="img">
@@ -28,8 +28,8 @@ function Education() {
                     </div>
                 </section>
                 <section className="horizontalCards">
-                    <BlueCard title="BTEC" description="Finished with DDD" hasButton={false} buttonHasArrow={false} link=""/>
-                    <BlueCard title="University" description="In Progress" hasButton={false} buttonHasArrow={false} link=""/>
+                    <BlueCard title="BTEC" description="2 year course where I came out with a final grade of DDD (Equivalent to 3 As at A Level)" hasButton={false} buttonHasArrow={false} link=""/>
+                    <BlueCard title="University" description="Nearly finished my first of 3 years" hasButton={false} buttonHasArrow={false} link=""/>
                     <BlueCard title="Industry" description="Click here to learn about my experience in the industry" hasButton={true} link="/webDev/#/experience/industry" buttonHasArrow={true}/>
                 </section>
             </div>
